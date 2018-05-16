@@ -1,9 +1,9 @@
-﻿Log file open, 05/16/18 19:26:29
+﻿Log file open, 05/16/18 22:32:43
 LogInit:Display: Running engine for game: RPG_Game
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(1729251192) SRandInit(1729251192).
+LogInit:Display: RandInit(1333573602) SRandInit(1333573602).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 7.205389
+LogStats: Stats thread started at 2.884040
 LogInit: Using libcurl 7.47.1
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2g
@@ -50,920 +50,674 @@ LogInit: Base directory: D:/Program Files/UE_4.16/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.05.16-18.26.31:620][  0]LogInit: Selected Device Profile: [Windows]
-[2018.05.16-18.26.31:620][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.05.16-18.26.31:729][  0]LogInit: Computer: DESKTOP-46CB9MQ
-[2018.05.16-18.26.31:729][  0]LogInit: User: JoshR
-[2018.05.16-18.26.31:729][  0]LogInit: CPU Page size=4096, Cores=4
-[2018.05.16-18.26.31:729][  0]LogInit: High frequency timer resolution =3.421879 MHz
-[2018.05.16-18.26.31:734][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
-[2018.05.16-18.26.31:734][  0]LogMemory: Platform Memory Stats for Windows
-[2018.05.16-18.26.31:734][  0]LogMemory: Process Physical Memory: 272.79 MB used, 272.79 MB peak
-[2018.05.16-18.26.31:734][  0]LogMemory: Process Virtual Memory: 258.61 MB used, 258.61 MB peak
-[2018.05.16-18.26.31:734][  0]LogMemory: Physical Memory: 5385.02 MB used,  10958.99 MB free, 16344.00 MB total
-[2018.05.16-18.26.31:734][  0]LogMemory: Virtual Memory: 654.72 MB used,  10958.99 MB free, 134217728.00 MB total
-[2018.05.16-18.26.33:463][  0]LogInit: Using OS detected language (en-GB).
-[2018.05.16-18.26.33:463][  0]LogInit: Using OS detected locale (en-GB).
-[2018.05.16-18.26.33:780][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
-[2018.05.16-18.26.38:941][  0]LogD3D11RHI: D3D11 adapters:
-[2018.05.16-18.26.38:987][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2018.05.16-18.26.38:987][  0]LogD3D11RHI:       4043/0/8172 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2018.05.16-18.26.38:988][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2018.05.16-18.26.38:988][  0]LogD3D11RHI:       0/0/8172 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2018.05.16-18.26.38:988][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.05.16-18.26.38:994][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.05.16-18.26.38:994][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
-[2018.05.16-18.26.38:994][  0]LogWindows: EnumDisplayDevices:
-[2018.05.16-18.26.38:995][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
-[2018.05.16-18.26.38:995][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.05.16-18.26.38:995][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.05.16-18.26.38:995][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.05.16-18.26.38:995][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2018.05.16-18.26.38:995][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2018.05.16-18.26.38:995][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2018.05.16-18.26.38:995][  0]LogD3D11RHI:      Driver Date: Unknown
-[2018.05.16-18.26.38:995][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2018.05.16-18.26.39:026][  0]LogD3D11RHI: Async texture creation enabled
-[2018.05.16-18.26.39:565][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.05.16-18.26.39:765][  0]LogShaderCompilers: Guid format shader working directory is -2 characters bigger than the processId version (../../../../../Users/JoshR/Documents/GitHub/Fuse/Intermediate/Shaders/WorkingDirectory/9172/).
-[2018.05.16-18.26.39:765][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/JoshR/AppData/Local/Temp/UnrealShaderWorkingDir/EB32CF524E48DF62ECBFA0AFF8688C48/'.
-[2018.05.16-18.26.39:803][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2018.05.16-18.26.45:472][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2018.05.16-18.26.45:564][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2018.05.16-18.26.45:615][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2018.05.16-18.26.45:686][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2018.05.16-18.26.45:741][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2018.05.16-18.26.45:798][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2018.05.16-18.26.45:856][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.05.16-18.26.45:917][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2018.05.16-18.26.45:968][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2018.05.16-18.26.46:054][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2018.05.16-18.26.46:113][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2018.05.16-18.26.46:163][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2018.05.16-18.26.46:217][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2018.05.16-18.26.46:280][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2018.05.16-18.26.46:335][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2018.05.16-18.26.46:490][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2018.05.16-18.26.46:490][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2018.05.16-18.26.46:547][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2018.05.16-18.26.46:830][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2018.05.16-18.26.46:850][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2018.05.16-18.26.46:901][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2018.05.16-18.26.46:962][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.05.16-18.26.47:015][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2018.05.16-18.26.47:168][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2018.05.16-18.26.47:169][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2018.05.16-18.26.48:711][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2018.05.16-18.26.49:025][  0]LogDerivedDataCache: Loaded boot cache 0.31s 90MB C:/Users/JoshR/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
-[2018.05.16-18.26.49:025][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/JoshR/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
-[2018.05.16-18.26.49:025][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Users/JoshR/Documents/GitHub/Fuse/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.05.16-18.26.49:025][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.05.16-18.26.49:025][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Users/JoshR/Documents/GitHub/Fuse/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.05.16-18.26.49:025][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.05.16-18.26.49:110][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.05.16-18.26.49:123][  0]LogDerivedDataCache: Using Local data cache path C:/Users/JoshR/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.05.16-18.26.49:200][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.05.16-18.26.49:296][  0]LogSlate: Using Freetype 2.6.0
-[2018.05.16-18.26.49:471][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.05.16-18.26.49:471][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.05.16-18.26.59:101][  0]LogInit: Selected Device Profile: [Windows]
-[2018.05.16-18.26.59:848][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2018.05.16-18.27.00:289][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.05.16-18.27.00:429][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.05.16-18.27.00:499][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.05.16-18.27.00:499][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2018.05.16-18.27.00:499][  0]LogMeshUtilities: No automatic mesh merging module available
-[2018.05.16-18.27.04:982][  0]LogNetVersion: RPG_Game , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2586067795)
-[2018.05.16-18.27.05:546][  0]LogAssetRegistry: FAssetRegistry took 0.0478 seconds to start up
-[2018.05.16-18.27.05:877][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.224946 seconds
-[2018.05.16-18.27.05:882][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
-[2018.05.16-18.27.05:882][  0]LogUObjectAllocator: 7260416 out of 0 bytes used by permanent object pool.
-[2018.05.16-18.27.05:882][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.05.16-18.27.05:926][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2018.05.16-18.27.18:097][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
-[2018.05.16-18.27.18:192][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.05.16-18.27.18:243][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.05.16-18.27.19:567][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2018.05.16-18.27.21:121][  0]SourceControl: Info Source control is disabled
-[2018.05.16-18.27.23:733][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.05.16-18.27.24:963][  0]LogEngine: Initializing Engine...
-[2018.05.16-18.27.25:010][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.05.16-18.27.25:655][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.05.16-18.27.25:656][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.05.16-18.27.26:051][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.05.16-18.27.26:144][  0]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.27.26:156][  0]LogInit: FAudioDevice initialized.
-[2018.05.16-18.27.26:192][  0]LogDerivedDataCache: Saved boot cache 0.04s 90MB C:/Users/JoshR/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
-[2018.05.16-18.27.26:196][  0]LogInit: Texture streaming: Enabled
-[2018.05.16-18.27.26:310][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.05.16-18.27.26:753][  0]LogInit: Transaction tracking system initialized
-[2018.05.16-18.27.27:242][  0]BlueprintLog: New page: Editor Load
-[2018.05.16-18.27.28:735][  0]LocalizationService: Info Localization service is disabled
-[2018.05.16-18.27.29:734][  0]LogConsoleResponse:Display: 
-[2018.05.16-18.27.32:670][  0]LogFileCache: Scanning file cache for directory 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/' took 0.02s
-[2018.05.16-18.27.32:670][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.05.16-18.27.32:670][  0]LogCook:Display: Mobile HDR setting 1
-[2018.05.16-18.27.36:082][  0]Cmd: MAP LOAD FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.05.16-18.27.36:086][  0]LightingResults: New page: Lighting Build
-[2018.05.16-18.27.36:200][  0]MapCheck: New page: Map Check
-[2018.05.16-18.27.36:200][  0]LightingResults: New page: Lighting Build
-[2018.05.16-18.27.37:571][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
-[2018.05.16-18.27.37:571][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/PressurePad/Button_Base.uasset.
-[2018.05.16-18.27.37:571][  0]LoadErrors:Error: Error /Game/Assets/PressurePad/Button_Base : Can't find file for asset. /Game/Materials/ButtonMaterial
-[2018.05.16-18.27.37:571][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
-[2018.05.16-18.27.37:571][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/PressurePad/Button_Base.uasset.
-[2018.05.16-18.27.37:571][  0]LoadErrors:Error: Error /Game/Assets/PressurePad/Button_Base : Can't find file for asset. /Game/Materials/ButtonMaterial
-[2018.05.16-18.27.37:593][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
-[2018.05.16-18.27.37:593][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/PressurePad/Button_Push.uasset.
-[2018.05.16-18.27.37:593][  0]LoadErrors:Error: Error /Game/Assets/PressurePad/Button_Push : Can't find file for asset. /Game/Materials/ButtonMaterial
-[2018.05.16-18.27.37:594][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
-[2018.05.16-18.27.37:594][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/PressurePad/Button_Push.uasset.
-[2018.05.16-18.27.37:594][  0]LoadErrors:Error: Error /Game/Assets/PressurePad/Button_Push : Can't find file for asset. /Game/Materials/ButtonMaterial
-[2018.05.16-18.27.38:595][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
-[2018.05.16-18.27.38:595][  0]LoadErrors: Info Failed to load /Game/Materials/ButtonMaterial.ButtonMaterial Referenced by Button_Push
-[2018.05.16-18.27.38:595][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading NULL.
-[2018.05.16-18.27.38:595][  0]LoadErrors: Info Failed to load /Game/Materials/ButtonMaterial.ButtonMaterial Referenced by Button_Push
-[2018.05.16-18.27.38:595][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
-[2018.05.16-18.27.38:596][  0]LoadErrors: Info Failed to load /Game/Materials/ButtonMaterial.ButtonMaterial Referenced by Button_Base
-[2018.05.16-18.27.38:596][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading NULL.
-[2018.05.16-18.27.38:596][  0]LoadErrors: Info Failed to load /Game/Materials/ButtonMaterial.ButtonMaterial Referenced by Button_Base
-[2018.05.16-18.27.39:264][  0]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.27.39:710][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.05.16-18.27.39:765][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.05.16-18.27.39:855][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 89.855ms to complete.
-[2018.05.16-18.27.39:855][  0]LogFileHelpers: Loading map 'RiverDale' took 3.781
-[2018.05.16-18.27.41:175][  0]LogCollectionManager: Loaded 0 collections in 0.001333 seconds
-[2018.05.16-18.27.41:436][  0]LogFileCache: Scanning file cache for directory 'D:/Users/JoshR/Documents/GitHub/Fuse/Saved/Collections/' took 0.01s
-[2018.05.16-18.27.41:436][  0]LogFileCache: Scanning file cache for directory 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/Developers/JoshR/Collections/' took 0.01s
-[2018.05.16-18.27.41:436][  0]LogFileCache: Scanning file cache for directory 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/Collections/' took 0.01s
-[2018.05.16-18.27.41:436][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2018.05.16-18.27.41:501][  0]LogContentBrowser: Native class hierarchy populated in 0.0162 seconds. Added 2343 classes and 497 folders.
-[2018.05.16-18.27.41:658][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
-[2018.05.16-18.27.42:365][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
-[2018.05.16-18.27.42:466][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
-[2018.05.16-18.27.43:101][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2018.05.16-18.27.43:182][  0]LogSlate: Took 0.011904 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.05.16-18.27.43:191][  0]LogSlate: Took 0.008059 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.05.16-18.27.43:218][  0]LogSlate: Took 0.007773 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.05.16-18.27.43:530][  0]LogRenderer: Reallocating scene render targets to support 1692x692 NumSamples 1 (Frame:1).
-[2018.05.16-18.27.43:833][  0]LogSlate: Took 0.011184 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.05.16-18.27.44:030][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2018.05.16-18.27.44:125][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
-[2018.05.16-18.27.44:125][  0]LogLoad: (Engine Initialization) Total time: 95.20 seconds
-[2018.05.16-18.27.44:125][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.75 seconds
-[2018.05.16-18.27.44:125][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2018.05.16-18.27.44:125][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2018.05.16-18.27.44:656][  0]LogOcInput: OculusInput pre-init called
-[2018.05.16-18.27.44:656][  0]LogHMD: Starting GearVRController plugin
-[2018.05.16-18.27.44:734][  0]SourceControl: Info On branch master
-[2018.05.16-18.27.44:734][  0]SourceControl: Info Your branch is up to date with 'origin/master'.
-[2018.05.16-18.27.44:734][  0]SourceControl: Info Changes not staged for commit:
-[2018.05.16-18.27.44:734][  0]SourceControl: Info   (use "git add <file>..." to update what will be committed)
-[2018.05.16-18.27.44:734][  0]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
-[2018.05.16-18.27.44:734][  0]SourceControl: Info 	modified:   Intermediate/CachedAssetRegistry.bin
-[2018.05.16-18.27.44:734][  0]SourceControl: Info 	modified:   Saved/Config/Windows/Editor.ini
-[2018.05.16-18.27.44:734][  0]SourceControl: Info 	modified:   Saved/Config/Windows/Engine.ini
-[2018.05.16-18.27.44:734][  0]SourceControl: Info 	modified:   Saved/Logs/RPG_Game.log
-[2018.05.16-18.27.44:734][  0]SourceControl: Info Untracked files:
-[2018.05.16-18.27.44:734][  0]SourceControl: Info   (use "git add <file>..." to include in what will be committed)
-[2018.05.16-18.27.44:734][  0]SourceControl: Info 	Saved/Config/CrashReportClient/UE4CC-Windows-A7D87E204628931A735897888297A4FE/
-[2018.05.16-18.27.44:734][  0]SourceControl: Info 	Saved/Logs/RPG_Game-backup-2018.05.16-19.26.29.log
-[2018.05.16-18.27.44:734][  0]SourceControl: Info no changes added to commit (use "git add" and/or "git commit -a")
-[2018.05.16-18.27.44:739][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.05.16-18.27.45:244][  2]LogAssetRegistry: Asset discovery search completed in 39.7193 seconds
-[2018.05.16-18.27.45:302][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2018.05.16-18.27.45:302][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000033 seconds (updated 0 objects)
-[2018.05.16-18.27.50:842][466]LogEditorViewport: Clicking on Actor (LMB): TriggerBox (TriggerBox2)
-[2018.05.16-18.27.51:756][515]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2018.05.16-18.27.55:119][889]LogSlate: Took 0.000262 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.05.16-18.27.56:076][974]LogSlate: Took 0.000264 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.05.16-18.27.56:856][974]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 112 classes and 0 folders.
-[2018.05.16-18.27.58:090][974]LogSlate: Took 0.009558 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2018.05.16-18.27.58:387][975]LogSlate: Took 0.007580 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2018.05.16-18.28.44:625][417]BlueprintLog: New page: Compile RiverDale
-[2018.05.16-18.28.45:671][452]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.05.16-18.28.46:510][452]LogSavePackage: Save=708.85ms
-[2018.05.16-18.28.46:510][452]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDale0E2700F04FE6F558044B92AFB28F994E.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap'
-[2018.05.16-18.28.46:534][452]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap
-[2018.05.16-18.28.46:561][452]LogFileHelpers: Saving map 'RiverDale' took 0.995
-[2018.05.16-18.28.47:708][557]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.28.47:914][557]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.28.47:940][557]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.28.48:016][557]PIE: New page: PIE session: RiverDale (16 May 2018 20:28:47)
-[2018.05.16-18.28.48:028][557]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.28.48:116][557]LogPlayLevel: PIE: StaticDuplicateObject took: (0.087101s)
-[2018.05.16-18.28.48:116][557]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.28.48:116][557]LogPlayLevel: PIE: World Init took: (0.000516s)
-[2018.05.16-18.28.48:116][557]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.087943s)
-[2018.05.16-18.28.48:197][557]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.28.48:203][557]LogInit: FAudioDevice initialized.
-[2018.05.16-18.28.48:247][557]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.28.48:375][557]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.28.48
-[2018.05.16-18.28.48:444][557]LogWorld: Bringing up level for play took: 0.077884
-[2018.05.16-18.28.48:602][557]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 11 classes and 0 folders.
-[2018.05.16-18.28.48:687][557]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale 1.085
-[2018.05.16-18.28.48:688][557]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.28.49:935][657]Cmd: LevelEditor.ToggleImmersive
-[2018.05.16-18.28.50:434][658]LogRenderer: Reallocating scene render targets to support 2560x1052 NumSamples 1 (Frame:102).
-[2018.05.16-18.29.12:041][ 94]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.29.12:222][ 94]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.29.38:463][ 45]BlueprintLog: New page: Compile RiverDale
-[2018.05.16-18.29.39:850][191]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.29.39:864][191]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.29.39:864][191]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.29.39:864][191]PIE: New page: PIE session: RiverDale (16 May 2018 20:29:39)
-[2018.05.16-18.29.39:864][191]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.29.39:899][191]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034685s)
-[2018.05.16-18.29.39:900][191]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.29.39:900][191]LogPlayLevel: PIE: World Init took: (0.000813s)
-[2018.05.16-18.29.39:900][191]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.035850s)
-[2018.05.16-18.29.39:918][191]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.29.39:925][191]LogInit: FAudioDevice initialized.
-[2018.05.16-18.29.39:966][191]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.29.39:974][191]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.29.39
-[2018.05.16-18.29.39:975][191]LogWorld: Bringing up level for play took: 0.008198
-[2018.05.16-18.29.39:976][191]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale 0.374
-[2018.05.16-18.29.39:976][191]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.29.47:798][966]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.29.47:846][966]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.29.51:498][399]BlueprintLog: New page: Compile RiverDale
-[2018.05.16-18.29.52:513][511]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.29.52:528][511]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.29.52:529][511]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.29.52:529][511]PIE: New page: PIE session: RiverDale (16 May 2018 20:29:52)
-[2018.05.16-18.29.52:529][511]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.29.52:565][511]LogPlayLevel: PIE: StaticDuplicateObject took: (0.036165s)
-[2018.05.16-18.29.52:565][511]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.29.52:566][511]LogPlayLevel: PIE: World Init took: (0.000705s)
-[2018.05.16-18.29.52:566][511]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.037224s)
-[2018.05.16-18.29.52:584][511]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.29.52:590][511]LogInit: FAudioDevice initialized.
-[2018.05.16-18.29.52:624][511]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.29.52:632][511]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.29.52
-[2018.05.16-18.29.52:633][511]LogWorld: Bringing up level for play took: 0.008228
-[2018.05.16-18.29.52:634][511]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale 1.032
-[2018.05.16-18.29.52:635][511]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.29.58:762][235]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.29.58:812][235]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.02:364][649]BlueprintLog: New page: Compile RiverDale
-[2018.05.16-18.30.03:352][754]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.30.03:368][754]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.03:368][754]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.30.03:368][754]PIE: New page: PIE session: RiverDale (16 May 2018 20:30:03)
-[2018.05.16-18.30.03:368][754]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.30.03:407][754]LogPlayLevel: PIE: StaticDuplicateObject took: (0.038914s)
-[2018.05.16-18.30.03:408][754]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.30.03:408][754]LogPlayLevel: PIE: World Init took: (0.001080s)
-[2018.05.16-18.30.03:408][754]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.040539s)
-[2018.05.16-18.30.03:430][754]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.30.03:440][754]LogInit: FAudioDevice initialized.
-[2018.05.16-18.30.03:469][754]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.30.03:478][754]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.30.03
-[2018.05.16-18.30.03:478][754]LogWorld: Bringing up level for play took: 0.008754
-[2018.05.16-18.30.03:480][754]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale -0.122
-[2018.05.16-18.30.03:480][754]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.25:272][240]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.25:321][240]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.27:703][470]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.30.27:720][470]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.27:720][470]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.30.27:721][470]PIE: New page: PIE session: RiverDale (16 May 2018 20:30:27)
-[2018.05.16-18.30.27:721][470]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.30.27:763][470]LogPlayLevel: PIE: StaticDuplicateObject took: (0.042852s)
-[2018.05.16-18.30.27:764][470]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.30.27:765][470]LogPlayLevel: PIE: World Init took: (0.001116s)
-[2018.05.16-18.30.27:765][470]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.044493s)
-[2018.05.16-18.30.27:783][470]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.30.27:790][470]LogInit: FAudioDevice initialized.
-[2018.05.16-18.30.27:818][470]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.30.27:827][470]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.30.27
-[2018.05.16-18.30.27:828][470]LogWorld: Bringing up level for play took: 0.008764
-[2018.05.16-18.30.27:830][470]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale 0.227
-[2018.05.16-18.30.27:830][470]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.31:196][865]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.31:242][865]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.33:077][ 38]LogEditorViewport: Clicking on Actor (LMB): Cube_C (Cube)
-[2018.05.16-18.30.35:276][270]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.30.35:293][270]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.35:293][270]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.30.35:293][270]PIE: New page: PIE session: RiverDale (16 May 2018 20:30:35)
-[2018.05.16-18.30.35:293][270]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.30.35:330][270]LogPlayLevel: PIE: StaticDuplicateObject took: (0.036828s)
-[2018.05.16-18.30.35:331][270]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.30.35:331][270]LogPlayLevel: PIE: World Init took: (0.001137s)
-[2018.05.16-18.30.35:332][270]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.038427s)
-[2018.05.16-18.30.35:350][270]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.30.35:356][270]LogInit: FAudioDevice initialized.
-[2018.05.16-18.30.35:387][270]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.30.35:396][270]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.30.35
-[2018.05.16-18.30.35:396][270]LogWorld: Bringing up level for play took: 0.008361
-[2018.05.16-18.30.35:398][270]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale -0.205
-[2018.05.16-18.30.35:398][270]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.39:092][706]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.39:134][706]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.40:821][870]LogEditorViewport: Clicking on Actor (LMB): Cube_C (Cube)
-[2018.05.16-18.30.42:668][ 64]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.30.42:685][ 64]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.42:685][ 64]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.30.42:685][ 64]PIE: New page: PIE session: RiverDale (16 May 2018 20:30:42)
-[2018.05.16-18.30.42:685][ 64]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.30.42:723][ 64]LogPlayLevel: PIE: StaticDuplicateObject took: (0.037736s)
-[2018.05.16-18.30.42:723][ 64]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.30.42:724][ 64]LogPlayLevel: PIE: World Init took: (0.000950s)
-[2018.05.16-18.30.42:724][ 64]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.039151s)
-[2018.05.16-18.30.42:742][ 64]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.30.42:749][ 64]LogInit: FAudioDevice initialized.
-[2018.05.16-18.30.42:778][ 64]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.30.42:787][ 64]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.30.42
-[2018.05.16-18.30.42:788][ 64]LogWorld: Bringing up level for play took: 0.008785
-[2018.05.16-18.30.42:790][ 64]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale -0.813
-[2018.05.16-18.30.42:790][ 64]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.43:856][186]Cmd: LevelEditor.ToggleImmersive
-[2018.05.16-18.30.47:274][566]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.47:346][566]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.48:098][634]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.30.48:114][634]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.48:115][634]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.30.48:115][634]PIE: New page: PIE session: RiverDale (16 May 2018 20:30:48)
-[2018.05.16-18.30.48:115][634]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.30.48:153][634]LogPlayLevel: PIE: StaticDuplicateObject took: (0.038699s)
-[2018.05.16-18.30.48:154][634]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.30.48:154][634]LogPlayLevel: PIE: World Init took: (0.000794s)
-[2018.05.16-18.30.48:154][634]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.039884s)
-[2018.05.16-18.30.48:171][634]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.30.48:177][634]LogInit: FAudioDevice initialized.
-[2018.05.16-18.30.48:212][634]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.30.48:221][634]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.30.48
-[2018.05.16-18.30.48:222][634]LogWorld: Bringing up level for play took: 0.008879
-[2018.05.16-18.30.48:223][634]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale 0.621
-[2018.05.16-18.30.48:223][634]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.49:491][783]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.49:529][783]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.51:480][  1]LogEditorViewport: Clicking on Actor (LMB): Cube_C (Cube)
-[2018.05.16-18.30.51:641][ 16]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2018.05.16-18.30.55:680][485]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.30.55:696][485]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.30.55:696][485]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.30.55:696][485]PIE: New page: PIE session: RiverDale (16 May 2018 20:30:55)
-[2018.05.16-18.30.55:696][485]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.30.55:735][485]LogPlayLevel: PIE: StaticDuplicateObject took: (0.038991s)
-[2018.05.16-18.30.55:735][485]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.30.55:736][485]LogPlayLevel: PIE: World Init took: (0.000773s)
-[2018.05.16-18.30.55:736][485]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.040096s)
-[2018.05.16-18.30.55:755][485]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.30.55:761][485]LogInit: FAudioDevice initialized.
-[2018.05.16-18.30.55:797][485]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.30.55:805][485]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.30.55
-[2018.05.16-18.30.55:806][485]LogWorld: Bringing up level for play took: 0.008499
-[2018.05.16-18.30.55:808][485]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale 0.205
-[2018.05.16-18.30.55:808][485]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.00:161][987]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.00:211][987]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.02:294][187]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
-[2018.05.16-18.31.02:778][222]LogEditorViewport: Clicking on Actor (LMB): Cube_C (Cube)
-[2018.05.16-18.31.02:933][234]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2018.05.16-18.31.10:098][  5]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2018.05.16-18.31.16:044][520]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2018.05.16-18.31.18:956][752]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2018.05.16-18.31.19:594][804]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.19:594][804]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.31.19:594][804]PIE: New page: SIE session: RiverDale (16 May 2018 20:31:19)
-[2018.05.16-18.31.19:594][804]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.31.19:631][804]LogPlayLevel: PIE: StaticDuplicateObject took: (0.036442s)
-[2018.05.16-18.31.19:631][804]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.31.19:632][804]LogPlayLevel: PIE: World Init took: (0.000813s)
-[2018.05.16-18.31.19:632][804]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.037760s)
-[2018.05.16-18.31.19:652][804]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.31.19:658][804]LogInit: FAudioDevice initialized.
-[2018.05.16-18.31.19:727][804]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.31.19:736][804]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.31.19
-[2018.05.16-18.31.19:736][804]LogWorld: Bringing up level for play took: 0.008333
-[2018.05.16-18.31.19:748][804]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale 0.145
-[2018.05.16-18.31.20:022][804]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.21:358][849]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2018.05.16-18.31.23:753][ 34]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2018.05.16-18.31.32:155][439]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.32:211][439]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.33:967][615]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.33:967][615]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.31.33:967][615]PIE: New page: PIE session: RiverDale (16 May 2018 20:31:33)
-[2018.05.16-18.31.33:967][615]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.31.34:005][615]LogPlayLevel: PIE: StaticDuplicateObject took: (0.037159s)
-[2018.05.16-18.31.34:005][615]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.31.34:005][615]LogPlayLevel: PIE: World Init took: (0.000766s)
-[2018.05.16-18.31.34:006][615]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.038251s)
-[2018.05.16-18.31.34:027][615]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.31.34:033][615]LogInit: FAudioDevice initialized.
-[2018.05.16-18.31.34:064][615]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.31.34:073][615]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.31.34
-[2018.05.16-18.31.34:074][615]LogWorld: Bringing up level for play took: 0.009177
-[2018.05.16-18.31.34:076][615]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale 0.473
-[2018.05.16-18.31.34:076][615]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.34:384][642]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.34:428][642]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.36:792][872]LogEditorViewport: Clicking on Actor (LMB): Cube_C (Cube)
-[2018.05.16-18.31.39:687][190]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.31.39:703][190]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.39:703][190]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.31.39:703][190]PIE: New page: PIE session: RiverDale (16 May 2018 20:31:39)
-[2018.05.16-18.31.39:703][190]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.31.39:738][190]LogPlayLevel: PIE: StaticDuplicateObject took: (0.035435s)
-[2018.05.16-18.31.39:739][190]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.31.39:739][190]LogPlayLevel: PIE: World Init took: (0.000744s)
-[2018.05.16-18.31.39:740][190]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.036532s)
-[2018.05.16-18.31.39:757][190]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.31.39:764][190]LogInit: FAudioDevice initialized.
-[2018.05.16-18.31.39:798][190]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.31.39:806][190]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.31.39
-[2018.05.16-18.31.39:807][190]LogWorld: Bringing up level for play took: 0.008306
-[2018.05.16-18.31.39:808][190]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale 0.206
-[2018.05.16-18.31.39:809][190]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.57:109][252]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.31.57:149][252]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.32.00:475][608]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.05.16-18.32.01:117][608]LogSavePackage: Save=626.02ms
-[2018.05.16-18.32.01:117][608]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDale682D04464DEFAAE964C0889FE24AC6A6.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap'
-[2018.05.16-18.32.01:123][608]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap
-[2018.05.16-18.32.01:148][608]LogFileHelpers: Saving map 'RiverDale' took 0.762
-[2018.05.16-18.32.13:362][982]LogEditorViewport: Clicking on Actor (LMB): TriggerBox (TriggerBox2)
-[2018.05.16-18.32.14:467][106]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2018.05.16-18.32.19:793][713]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.05.16-18.32.20:448][713]LogSavePackage: Save=640.04ms
-[2018.05.16-18.32.20:448][713]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDaleE80CAA9343EFFC48101DBA87C22B1E6D.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap'
-[2018.05.16-18.32.20:451][713]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap
-[2018.05.16-18.32.20:560][713]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale_BuiltData" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale_BuiltData.uasset" SILENT=true
-[2018.05.16-18.32.21:625][713]LogSlate: Took 0.013795 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.05.16-18.32.21:752][713]LogSavePackage: Save=1029.82ms
-[2018.05.16-18.32.21:752][713]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDale_BuiltData456FC10E45E36F82E8F028B3597D1290.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale_BuiltData.uasset'
-[2018.05.16-18.32.21:757][713]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale_BuiltData.uasset
-[2018.05.16-18.32.24:055][934]SourceControl: Info fatal: D:/Program Files/UE_4.16/Engine/Content/: 'D:/Program Files/UE_4.16/Engine/Content/' is outside repository
-[2018.05.16-18.34.16:278][ 69]LogEditorFactories: Performing atomic reimport of [E:/FMP/Logo & UI/Text/Intro Text.png]
-[2018.05.16-18.34.16:278][ 69]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 E:/FMP/Logo & UI/Text/Intro Text.png)
-[2018.05.16-18.34.16:345][ 69]LogTexture:Display: Building textures: Intro_Text (BGRA8, 1429X295)
-[2018.05.16-18.34.16:395][ 69]LogEditorFactories: -- imported successfully
-[2018.05.16-18.36.26:165][225]LogEditorTransaction: Undo Remove Widget
-[2018.05.16-18.36.29:021][523]LogEditorFactories: Performing atomic reimport of [E:/FMP/Logo & UI/Text/Intro Text.png]
-[2018.05.16-18.36.29:021][523]LogFactory: FactoryCreateFile: Texture2D with ReimportTextureFactory (0 0 E:/FMP/Logo & UI/Text/Intro Text.png)
-[2018.05.16-18.36.29:031][523]LogTexture:Display: Building textures: Intro_Text (BGRA8, 1071X221)
-[2018.05.16-18.36.29:046][523]LogEditorFactories: -- imported successfully
-[2018.05.16-18.37.03:148][579]BlueprintLog: New page: Compile Intro
-[2018.05.16-18.37.03:284][579]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
-[2018.05.16-18.37.03:583][604]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Gameplay/HUD/Intro/INtro" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Gameplay/HUD/Intro/INtro.uasset" SILENT=true
-[2018.05.16-18.37.03:610][604]LogSavePackage: Save=22.06ms
-[2018.05.16-18.37.03:610][604]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/INtro172C19D942CE9E075B9362A1E127F05E.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Gameplay/HUD/Intro/INtro.uasset'
-[2018.05.16-18.37.03:615][604]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Gameplay/HUD/Intro/INtro.uasset
-[2018.05.16-18.37.05:406][796]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.37.05:422][796]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.37.05:422][796]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.37.05:422][796]PIE: New page: PIE session: RiverDale (16 May 2018 20:37:05)
-[2018.05.16-18.37.05:423][796]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.37.05:462][796]LogPlayLevel: PIE: StaticDuplicateObject took: (0.039958s)
-[2018.05.16-18.37.05:463][796]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.37.05:463][796]LogPlayLevel: PIE: World Init took: (0.000692s)
-[2018.05.16-18.37.05:463][796]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.040965s)
-[2018.05.16-18.37.05:480][796]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.37.05:485][796]LogInit: FAudioDevice initialized.
-[2018.05.16-18.37.05:512][796]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.37.05:520][796]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.37.05
-[2018.05.16-18.37.05:521][796]LogWorld: Bringing up level for play took: 0.008278
-[2018.05.16-18.37.05:523][796]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale -0.08
-[2018.05.16-18.37.05:523][796]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.37.05:845][831]Cmd: LevelEditor.ToggleImmersive
-[2018.05.16-18.37.28:830][458]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.37.28:910][458]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.43.11:168][844]BlueprintLog: New page: Compile RiverDale
-[2018.05.16-18.43.12:130][941]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.43.12:146][941]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.43.12:146][941]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.43.12:146][941]PIE: New page: PIE session: RiverDale (16 May 2018 20:43:12)
-[2018.05.16-18.43.12:146][941]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.43.12:183][941]LogPlayLevel: PIE: StaticDuplicateObject took: (0.036583s)
-[2018.05.16-18.43.12:183][941]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.43.12:184][941]LogPlayLevel: PIE: World Init took: (0.000945s)
-[2018.05.16-18.43.12:184][941]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.037875s)
-[2018.05.16-18.43.12:204][941]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.43.12:213][941]LogInit: FAudioDevice initialized.
-[2018.05.16-18.43.12:243][941]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.43.12:251][941]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.43.12
-[2018.05.16-18.43.12:252][941]LogWorld: Bringing up level for play took: 0.008430
-[2018.05.16-18.43.12:253][941]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale 0.651
-[2018.05.16-18.43.12:254][941]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.43.24:013][348]Cmd: LevelEditor.ToggleImmersive
-[2018.05.16-18.43.28:218][829]Cmd: LevelEditor.ToggleImmersive
-[2018.05.16-18.43.28:595][852]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.43.28:645][852]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.43.35:019][588]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.05.16-18.43.35:655][588]LogSavePackage: Save=594.80ms
-[2018.05.16-18.43.35:655][588]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDale0FF8A3B84BF82B238FD973886444ECA6.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap'
-[2018.05.16-18.43.35:661][588]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap
-[2018.05.16-18.43.35:685][588]LogFileHelpers: Saving map 'RiverDale' took 0.747
-[2018.05.16-18.43.44:879][672]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.05.16-18.43.45:495][672]LogSavePackage: Save=597.08ms
-[2018.05.16-18.43.45:495][672]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDale0D3DDC334E27CC38D00BC68794E9D47E.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap'
-[2018.05.16-18.43.45:501][672]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap
-[2018.05.16-18.43.45:525][672]LogFileHelpers: Saving map 'RiverDale' took 0.725
-[2018.05.16-18.43.47:498][908]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.43.47:512][908]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.43.47:512][908]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.43.47:512][908]PIE: New page: PIE session: RiverDale (16 May 2018 20:43:47)
-[2018.05.16-18.43.47:512][908]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.43.47:546][908]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033384s)
-[2018.05.16-18.43.47:546][908]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.43.47:546][908]LogPlayLevel: PIE: World Init took: (0.000696s)
-[2018.05.16-18.43.47:547][908]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.034417s)
-[2018.05.16-18.43.47:565][908]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.43.47:571][908]LogInit: FAudioDevice initialized.
-[2018.05.16-18.43.47:603][908]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.43.47:612][908]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.43.47
-[2018.05.16-18.43.47:612][908]LogWorld: Bringing up level for play took: 0.008312
-[2018.05.16-18.43.47:614][908]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale 0.011
-[2018.05.16-18.43.47:614][908]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.43.48:202][975]Cmd: LevelEditor.ToggleImmersive
-[2018.05.16-18.44.06:281][986]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.44.06:362][986]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.44.33:866][190]BlueprintLog: New page: Compile RiverDale
-[2018.05.16-18.44.34:516][240]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.05.16-18.44.35:128][240]LogSavePackage: Save=594.18ms
-[2018.05.16-18.44.35:128][240]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDale2390698447AB173D0FC653B633CB0D97.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap'
-[2018.05.16-18.44.35:133][240]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap
-[2018.05.16-18.44.35:158][240]LogFileHelpers: Saving map 'RiverDale' took 0.721
-[2018.05.16-18.44.48:933][849]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.44.48:948][849]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.44.48:948][849]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.44.48:949][849]PIE: New page: PIE session: RiverDale (16 May 2018 20:44:48)
-[2018.05.16-18.44.48:949][849]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.44.48:982][849]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033610s)
-[2018.05.16-18.44.48:983][849]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.44.48:983][849]LogPlayLevel: PIE: World Init took: (0.000700s)
-[2018.05.16-18.44.48:983][849]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.034654s)
-[2018.05.16-18.44.49:000][849]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.44.49:006][849]LogInit: FAudioDevice initialized.
-[2018.05.16-18.44.49:033][849]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.44.49:042][849]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.44.49
-[2018.05.16-18.44.49:042][849]LogWorld: Bringing up level for play took: 0.008377
-[2018.05.16-18.44.49:044][849]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale -0.559
-[2018.05.16-18.44.49:044][849]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.44.55:830][630]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.44.55:877][630]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.45.03:728][557]BlueprintLog: New page: Compile RiverDale
-[2018.05.16-18.45.04:601][652]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.45.04:616][652]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.45.04:616][652]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.45.04:617][652]PIE: New page: PIE session: RiverDale (16 May 2018 20:45:04)
-[2018.05.16-18.45.04:617][652]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.45.04:650][652]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033666s)
-[2018.05.16-18.45.04:651][652]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.45.04:651][652]LogPlayLevel: PIE: World Init took: (0.000688s)
-[2018.05.16-18.45.04:651][652]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.034703s)
-[2018.05.16-18.45.04:671][652]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.45.04:677][652]LogInit: FAudioDevice initialized.
-[2018.05.16-18.45.04:710][652]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.45.04:718][652]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.45.04
-[2018.05.16-18.45.04:719][652]LogWorld: Bringing up level for play took: 0.008919
-[2018.05.16-18.45.04:721][652]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale -0.882
-[2018.05.16-18.45.04:721][652]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.45.05:814][779]Cmd: LevelEditor.ToggleImmersive
-[2018.05.16-18.45.26:426][  9]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.45.26:510][  9]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.48.18:240][781]LogEditorTransaction: Undo Move Node
-[2018.05.16-18.48.20:668][ 70]LogEditorTransaction: Undo Move Node
-[2018.05.16-18.48.36:602][978]BlueprintLog: New page: Compile RiverDale
-[2018.05.16-18.48.37:131][ 12]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.05.16-18.48.37:748][ 12]LogSavePackage: Save=596.32ms
-[2018.05.16-18.48.37:748][ 12]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDale42F7A3974D187E1461641089BDF5B663.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap'
-[2018.05.16-18.48.37:754][ 12]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap
-[2018.05.16-18.48.37:783][ 12]LogFileHelpers: Saving map 'RiverDale' took 0.734
-[2018.05.16-18.48.39:434][200]LogTemp: Repeting last play command: Selected Viewport
-[2018.05.16-18.48.39:450][200]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.48.39:450][200]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.16-18.48.39:450][200]PIE: New page: PIE session: RiverDale (16 May 2018 20:48:39)
-[2018.05.16-18.48.39:450][200]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
-[2018.05.16-18.48.39:484][200]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034615s)
-[2018.05.16-18.48.39:485][200]LogAIModule: Creating AISystem for world RiverDale
-[2018.05.16-18.48.39:485][200]LogPlayLevel: PIE: World Init took: (0.000724s)
-[2018.05.16-18.48.39:485][200]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.035684s)
-[2018.05.16-18.48.39:502][200]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.05.16-18.48.39:508][200]LogInit: FAudioDevice initialized.
-[2018.05.16-18.48.39:537][200]LogLoad: Game class is 'FuseGM_C'
-[2018.05.16-18.48.39:545][200]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-19.48.39
-[2018.05.16-18.48.39:546][200]LogWorld: Bringing up level for play took: 0.008355
-[2018.05.16-18.48.39:547][200]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale -0.055
-[2018.05.16-18.48.39:548][200]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.48.53:681][892]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.48.53:726][892]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
-[2018.05.16-18.48.57:844][260]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Gameplay/HUD/Intro/Intro_Text" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Gameplay/HUD/Intro/Intro_Text.uasset" SILENT=true
-[2018.05.16-18.48.57:904][260]LogSavePackage: Save=55.62ms
-[2018.05.16-18.48.57:904][260]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/Intro_Text843B013043176DA4A30614A8D6754126.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Gameplay/HUD/Intro/Intro_Text.uasset'
-[2018.05.16-18.48.57:909][260]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Gameplay/HUD/Intro/Intro_Text.uasset
-[2018.05.16-18.49.01:469][662]LogEditorViewport: Clicking on Actor (LMB): TriggerBox (TriggerBox2)
-[2018.05.16-18.49.01:550][668]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
-[2018.05.16-18.49.03:885][902]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.05.16-18.49.04:499][902]LogSavePackage: Save=596.67ms
-[2018.05.16-18.49.04:499][902]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDale0393DAE34BAF1355D6BF01A48CDDC499.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap'
-[2018.05.16-18.49.04:502][902]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap
-[2018.05.16-18.49.04:702][902]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale_BuiltData" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale_BuiltData.uasset" SILENT=true
-[2018.05.16-18.49.05:440][902]LogSavePackage: Save=714.35ms
-[2018.05.16-18.49.05:440][902]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDale_BuiltData0D65628F497B4B21C96AD9968FD30FD7.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale_BuiltData.uasset'
-[2018.05.16-18.49.05:444][902]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale_BuiltData.uasset
-[2018.05.16-18.49.07:070][ 87]SourceControl: Info fatal: D:/Program Files/UE_4.16/Engine/Content/: 'D:/Program Files/UE_4.16/Engine/Content/' is outside repository
-[2018.05.16-18.49.17:262][ 87]LogSourceControl: FGitCheckInWorker: commit successful
-[2018.05.16-18.49.17:367][ 87]SourceControl: Info [master 9f9f32b] Fixed the intro widget
-[2018.05.16-18.49.17:367][ 87]SourceControl: Info  4 files changed, 0 insertions(+), 0 deletions(-)
-[2018.05.16-18.49.17:367][ 87]SourceControl: Info  rewrite Content/Gameplay/HUD/Intro/Intro_Text.uasset (98%)
-[2018.05.16-18.49.17:371][ 87]SourceControl: Info Commited [master 9f9f32b] Fixed the intro widget.
-[2018.05.16-18.51.46:023][915]LogHttp:Warning: 0000016314DCF100: request failed, libcurl error: 6 (Couldn't resolve host name)
-[2018.05.16-18.51.46:023][915]LogHttp:Warning: 0000016314DCF100: libcurl info message cache 0 (Connection 9 seems to be dead!)
-[2018.05.16-18.51.46:023][915]LogHttp:Warning: 0000016314DCF100: libcurl info message cache 1 (Closing connection 9)
-[2018.05.16-18.51.46:023][915]LogHttp:Warning: 0000016314DCF100: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
-[2018.05.16-18.51.46:023][915]LogHttp:Warning: 0000016314DCF100: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
-[2018.05.16-18.51.46:023][915]LogHttp:Warning: 0000016314DCF100: libcurl info message cache 4 (Closing connection 10)
-[2018.05.16-18.54.37:980][104]Cmd: QUIT_EDITOR
-[2018.05.16-18.54.38:439][104]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2018.05.16-18.54.38:463][104]LogExit: Preparing to exit.
-[2018.05.16-18.54.39:935][104]LogDirectoryWatcher: A directory notification for 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/' was aborted.
-[2018.05.16-18.54.40:056][104]LogExit: Editor shut down
-[2018.05.16-18.54.40:060][104]LogExit: Transaction tracking system shut down
-[2018.05.16-18.54.41:196][104]LogObj: Freed 0b from 0 cluster array pools.
-[2018.05.16-18.54.41:196][104]LogExit: Object subsystem successfully closed.
-[2018.05.16-18.54.41:330][104]LogD3D11RHI: Shutdown
-[2018.05.16-18.54.41:330][104]LogD3D11RHI: CleanupD3DDevice
-[2018.05.16-18.54.41:450][104]LogD3D11RHI: ~FD3D11DynamicRHI
-[2018.05.16-18.54.42:378][104]LogModuleManager: Shutting down and abandoning module SequencerWidgets (536)
-[2018.05.16-18.54.42:378][104]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (534)
-[2018.05.16-18.54.42:378][104]LogModuleManager: Shutting down and abandoning module BlueprintGraph (532)
-[2018.05.16-18.54.42:378][104]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (530)
-[2018.05.16-18.54.42:390][104]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (528)
-[2018.05.16-18.54.42:395][104]LogModuleManager: Shutting down and abandoning module CrashTracker (526)
-[2018.05.16-18.54.42:395][104]LogModuleManager: Shutting down and abandoning module SceneOutliner (524)
-[2018.05.16-18.54.42:404][104]LogModuleManager: Shutting down and abandoning module AddContentDialog (522)
-[2018.05.16-18.54.42:419][104]LogDirectoryWatcher: A directory notification for 'D:/Program Files/UE_4.16/FeaturePacks/' was aborted.
-[2018.05.16-18.54.42:420][104]LogModuleManager: Shutting down and abandoning module WidgetCarousel (521)
-[2018.05.16-18.54.42:420][104]LogModuleManager: Shutting down and abandoning module EditorWidgets (518)
-[2018.05.16-18.54.42:420][104]LogModuleManager: Shutting down and abandoning module CollectionManager (516)
-[2018.05.16-18.54.42:420][104]LogDirectoryWatcher: A directory notification for 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/Collections/' was aborted.
-[2018.05.16-18.54.42:420][104]LogDirectoryWatcher: A directory notification for 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/Developers/JoshR/Collections/' was aborted.
-[2018.05.16-18.54.42:420][104]LogDirectoryWatcher: A directory notification for 'D:/Users/JoshR/Documents/GitHub/Fuse/Saved/Collections/' was aborted.
-[2018.05.16-18.54.42:420][104]LogModuleManager: Shutting down and abandoning module StatsViewer (514)
-[2018.05.16-18.54.42:433][104]LogModuleManager: Shutting down and abandoning module FoliageEdit (512)
-[2018.05.16-18.54.42:433][104]LogModuleManager: Shutting down and abandoning module LandscapeEditor (510)
-[2018.05.16-18.54.42:456][104]LogModuleManager: Shutting down and abandoning module MeshPaintMode (508)
-[2018.05.16-18.54.42:456][104]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (506)
-[2018.05.16-18.54.42:456][104]LogModuleManager: Shutting down and abandoning module ActorPickerMode (504)
-[2018.05.16-18.54.42:456][104]LogModuleManager: Shutting down and abandoning module GeometryMode (502)
-[2018.05.16-18.54.42:456][104]LogModuleManager: Shutting down and abandoning module TextureAlignMode (500)
-[2018.05.16-18.54.42:456][104]LogModuleManager: Shutting down and abandoning module BspMode (498)
-[2018.05.16-18.54.42:456][104]LogModuleManager: Shutting down and abandoning module HardwareSurvey (496)
-[2018.05.16-18.54.42:462][104]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (494)
-[2018.05.16-18.54.42:469][104]LogModuleManager: Shutting down and abandoning module AutomationWorker (492)
-[2018.05.16-18.54.42:478][104]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (490)
-[2018.05.16-18.54.42:506][104]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (488)
-[2018.05.16-18.54.42:525][104]LogModuleManager: Shutting down and abandoning module PlacementMode (487)
-[2018.05.16-18.54.42:525][104]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (484)
-[2018.05.16-18.54.42:525][104]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (482)
-[2018.05.16-18.54.42:525][104]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (480)
-[2018.05.16-18.54.42:525][104]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (478)
-[2018.05.16-18.54.42:525][104]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (476)
-[2018.05.16-18.54.42:525][104]LogModuleManager: Shutting down and abandoning module Media (475)
-[2018.05.16-18.54.42:525][104]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (472)
-[2018.05.16-18.54.42:525][104]LogModuleManager: Shutting down and abandoning module CharacterAI (470)
-[2018.05.16-18.54.42:525][104]LogModuleManager: Shutting down and abandoning module AudioCapture (468)
-[2018.05.16-18.54.42:566][104]LogModuleManager: Shutting down and abandoning module SequenceRecorder (467)
-[2018.05.16-18.54.42:583][104]LogModuleManager: Shutting down and abandoning module SmartSnapping (464)
-[2018.05.16-18.54.42:583][104]LogModuleManager: Shutting down and abandoning module SessionServices (462)
-[2018.05.16-18.54.42:583][104]LogModuleManager: Shutting down and abandoning module ViewportSnapping (460)
-[2018.05.16-18.54.42:583][104]LogModuleManager: Shutting down and abandoning module ViewportInteraction (458)
-[2018.05.16-18.54.42:583][104]LogModuleManager: Shutting down and abandoning module ClothPainter (456)
-[2018.05.16-18.54.42:661][104]LogModuleManager: Shutting down and abandoning module LogVisualizer (454)
-[2018.05.16-18.54.42:710][104]LogModuleManager: Shutting down and abandoning module IntroTutorials (452)
-[2018.05.16-18.54.42:767][104]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (451)
-[2018.05.16-18.54.42:780][104]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (448)
-[2018.05.16-18.54.42:780][104]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (446)
-[2018.05.16-18.54.42:792][104]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (444)
-[2018.05.16-18.54.42:792][104]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (442)
-[2018.05.16-18.54.42:792][104]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (441)
-[2018.05.16-18.54.43:504][104]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (438)
-[2018.05.16-18.54.43:505][104]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (436)
-[2018.05.16-18.54.43:505][104]LogModuleManager: Shutting down and abandoning module InputBindingEditor (434)
-[2018.05.16-18.54.43:520][104]LogModuleManager: Shutting down and abandoning module MergeActors (432)
-[2018.05.16-18.54.43:526][104]LogModuleManager: Shutting down and abandoning module SizeMap (430)
-[2018.05.16-18.54.43:526][104]LogModuleManager: Shutting down and abandoning module TreeMap (428)
-[2018.05.16-18.54.43:529][104]LogModuleManager: Shutting down and abandoning module ReferenceViewer (426)
-[2018.05.16-18.54.43:538][104]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (424)
-[2018.05.16-18.54.43:550][104]LogModuleManager: Shutting down and abandoning module LocalizationService (423)
-[2018.05.16-18.54.43:559][104]LogModuleManager: Shutting down and abandoning module HardwareTargeting (420)
-[2018.05.16-18.54.43:559][104]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (418)
-[2018.05.16-18.54.43:565][104]LogModuleManager: Shutting down and abandoning module UndoHistory (416)
-[2018.05.16-18.54.43:566][104]LogModuleManager: Shutting down and abandoning module UserFeedback (414)
-[2018.05.16-18.54.43:566][104]LogModuleManager: Shutting down and abandoning module XmlParser (412)
-[2018.05.16-18.54.43:572][104]LogModuleManager: Shutting down and abandoning module Blutility (410)
-[2018.05.16-18.54.43:573][104]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (408)
-[2018.05.16-18.54.43:573][104]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (407)
-[2018.05.16-18.54.43:573][104]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (404)
-[2018.05.16-18.54.43:573][104]LogModuleManager: Shutting down and abandoning module SettingsEditor (402)
-[2018.05.16-18.54.43:582][104]LogModuleManager: Shutting down and abandoning module ProjectLauncher (400)
-[2018.05.16-18.54.43:592][104]LogModuleManager: Shutting down and abandoning module SessionFrontend (398)
-[2018.05.16-18.54.43:600][104]LogModuleManager: Shutting down and abandoning module ProfilerClient (396)
-[2018.05.16-18.54.43:611][104]LogModuleManager: Shutting down and abandoning module DeviceManager (394)
-[2018.05.16-18.54.43:624][104]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (393)
-[2018.05.16-18.54.43:674][104]LogModuleManager: Shutting down and abandoning module AutomationController (390)
-[2018.05.16-18.54.43:684][104]LogModuleManager: Shutting down and abandoning module AutomationWindow (388)
-[2018.05.16-18.54.43:697][104]LogModuleManager: Shutting down and abandoning module Layers (386)
-[2018.05.16-18.54.43:708][104]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (384)
-[2018.05.16-18.54.43:708][104]LogModuleManager: Shutting down and abandoning module DetailCustomizations (382)
-[2018.05.16-18.54.43:716][104]LogModuleManager: Shutting down and abandoning module PackagesDialog (380)
-[2018.05.16-18.54.43:716][104]LogModuleManager: Shutting down and abandoning module Persona (378)
-[2018.05.16-18.54.43:743][104]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (377)
-[2018.05.16-18.54.43:743][104]LogModuleManager: Shutting down and abandoning module AnimGraph (375)
-[2018.05.16-18.54.43:743][104]LogModuleManager: Shutting down and abandoning module Kismet (372)
-[2018.05.16-18.54.43:762][104]LogModuleManager: Shutting down and abandoning module ClassViewer (370)
-[2018.05.16-18.54.43:762][104]LogModuleManager: Shutting down and abandoning module Toolbox (368)
-[2018.05.16-18.54.43:775][104]LogModuleManager: Shutting down and abandoning module ModuleUI (366)
-[2018.05.16-18.54.43:785][104]LogModuleManager: Shutting down and abandoning module MovieSceneTools (364)
-[2018.05.16-18.54.43:797][104]LogModuleManager: Shutting down and abandoning module OutputLog (362)
-[2018.05.16-18.54.43:817][104]LogModuleManager: Shutting down and abandoning module GammaUI (360)
-[2018.05.16-18.54.43:824][104]LogModuleManager: Shutting down and abandoning module Documentation (358)
-[2018.05.16-18.54.43:824][104]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (356)
-[2018.05.16-18.54.43:824][104]LogModuleManager: Shutting down and abandoning module MovieScene (354)
-[2018.05.16-18.54.43:824][104]LogModuleManager: Shutting down and abandoning module Niagara (352)
-[2018.05.16-18.54.43:824][104]LogModuleManager: Shutting down and abandoning module NiagaraEditor (351)
-[2018.05.16-18.54.43:850][104]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (348)
-[2018.05.16-18.54.43:850][104]LogModuleManager: Shutting down and abandoning module AnalyticsET (346)
-[2018.05.16-18.54.43:850][104]LogModuleManager: Shutting down and abandoning module PortalServices (344)
-[2018.05.16-18.54.43:850][104]LogModuleManager: Shutting down and abandoning module PortalRpc (342)
-[2018.05.16-18.54.43:850][104]LogModuleManager: Shutting down and abandoning module MessagingRpc (340)
-[2018.05.16-18.54.43:850][104]LogModuleManager: Shutting down and abandoning module AIModule (338)
-[2018.05.16-18.54.43:850][104]LogModuleManager: Shutting down and abandoning module GameplayDebugger (337)
-[2018.05.16-18.54.43:850][104]LogModuleManager: Shutting down and abandoning module AITestSuite (335)
-[2018.05.16-18.54.43:859][104]LogModuleManager: Shutting down and abandoning module ProfilerService (332)
-[2018.05.16-18.54.43:935][104]LogModuleManager: Shutting down and abandoning module TaskGraph (330)
-[2018.05.16-18.54.43:966][104]LogModuleManager: Shutting down and abandoning module SubstanceEditor (328)
-[2018.05.16-18.54.43:977][104]LogModuleManager: Shutting down and abandoning module SteamVRController (326)
-[2018.05.16-18.54.43:977][104]LogModuleManager: Shutting down and abandoning module SteamVR (324)
-[2018.05.16-18.54.43:977][104]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (322)
-[2018.05.16-18.54.44:013][104]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (320)
-[2018.05.16-18.54.44:023][104]LogModuleManager: Shutting down and abandoning module OculusLibrary (318)
-[2018.05.16-18.54.44:023][104]LogModuleManager: Shutting down and abandoning module OculusInput (316)
-[2018.05.16-18.54.44:023][104]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (314)
-[2018.05.16-18.54.44:023][104]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (312)
-[2018.05.16-18.54.44:023][104]LogModuleManager: Shutting down and abandoning module CableComponent (310)
-[2018.05.16-18.54.44:032][104]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (308)
-[2018.05.16-18.54.44:032][104]LogModuleManager: Shutting down and abandoning module AndroidPermission (306)
-[2018.05.16-18.54.44:032][104]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (302)
-[2018.05.16-18.54.44:053][104]LogModuleManager: Shutting down and abandoning module HTML5Networking (300)
-[2018.05.16-18.54.44:053][104]LogModuleManager: Shutting down and abandoning module AlembicImporter (298)
-[2018.05.16-18.54.44:067][104]LogModuleManager: Shutting down and abandoning module AlembicLibrary (297)
-[2018.05.16-18.54.44:067][104]LogModuleManager: Shutting down and abandoning module GeometryCache (296)
-[2018.05.16-18.54.44:075][104]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (295)
-[2018.05.16-18.54.44:075][104]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (290)
-[2018.05.16-18.54.44:075][104]LogModuleManager: Shutting down and abandoning module SuperSearch (289)
-[2018.05.16-18.54.44:075][104]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (286)
-[2018.05.16-18.54.44:075][104]LogModuleManager: Shutting down and abandoning module PluginBrowser (284)
-[2018.05.16-18.54.44:106][104]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (282)
-[2018.05.16-18.54.44:124][104]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (280)
-[2018.05.16-18.54.44:124][104]LogModuleManager: Shutting down and abandoning module DesktopPlatform (279)
-[2018.05.16-18.54.44:124][104]LogModuleManager: Shutting down and abandoning module UObjectPlugin (276)
-[2018.05.16-18.54.44:124][104]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (274)
-[2018.05.16-18.54.44:139][104]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (272)
-[2018.05.16-18.54.44:159][104]LogModuleManager: Shutting down and abandoning module GitSourceControl (270)
-[2018.05.16-18.54.44:167][104]LogModuleManager: Shutting down and abandoning module SourceControl (269)
-[2018.05.16-18.54.44:167][104]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (266)
-[2018.05.16-18.54.44:167][104]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (264)
-[2018.05.16-18.54.44:167][104]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (262)
-[2018.05.16-18.54.44:167][104]LogModuleManager: Shutting down and abandoning module Paper2DEditor (260)
-[2018.05.16-18.54.44:182][104]LogModuleManager: Shutting down and abandoning module MeshPaint (259)
-[2018.05.16-18.54.44:197][104]LogModuleManager: Shutting down and abandoning module LevelEditor (257)
-[2018.05.16-18.54.44:202][104]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (256)
-[2018.05.16-18.54.44:218][104]LogModuleManager: Shutting down and abandoning module MainFrame (254)
-[2018.05.16-18.54.44:226][104]LogModuleManager: Shutting down and abandoning module HotReload (253)
-[2018.05.16-18.54.44:243][104]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (248)
-[2018.05.16-18.54.44:255][104]LogModuleManager: Shutting down and abandoning module PhysXVehicles (246)
-[2018.05.16-18.54.44:255][104]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (244)
-[2018.05.16-18.54.44:255][104]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (242)
-[2018.05.16-18.54.44:255][104]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (240)
-[2018.05.16-18.54.44:282][104]LogModuleManager: Shutting down and abandoning module UdpMessaging (238)
-[2018.05.16-18.54.44:382][104]LogModuleManager: Shutting down and abandoning module TcpMessaging (236)
-[2018.05.16-18.54.44:514][104]LogModuleManager: Shutting down and abandoning module SubstanceCore (234)
-[2018.05.16-18.54.44:533][104]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
-[2018.05.16-18.54.44:549][104]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
-[2018.05.16-18.54.44:563][104]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
-[2018.05.16-18.54.44:563][104]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
-[2018.05.16-18.54.44:572][104]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
-[2018.05.16-18.54.44:572][104]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
-[2018.05.16-18.54.44:572][104]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
-[2018.05.16-18.54.44:572][104]LogModuleManager: Shutting down and abandoning module Paper2D (218)
-[2018.05.16-18.54.44:585][104]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
-[2018.05.16-18.54.44:585][104]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
-[2018.05.16-18.54.44:619][104]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
-[2018.05.16-18.54.44:630][104]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
-[2018.05.16-18.54.44:646][104]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
-[2018.05.16-18.54.44:646][104]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
-[2018.05.16-18.54.44:676][104]LogModuleManager: Shutting down and abandoning module VREditor (204)
-[2018.05.16-18.54.44:692][104]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
-[2018.05.16-18.54.44:731][104]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
-[2018.05.16-18.54.44:731][104]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
-[2018.05.16-18.54.44:841][104]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
-[2018.05.16-18.54.44:841][104]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
-[2018.05.16-18.54.44:889][104]LogModuleManager: Shutting down and abandoning module UMG (192)
-[2018.05.16-18.54.44:889][104]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
-[2018.05.16-18.54.44:889][104]LogModuleManager: Shutting down and abandoning module Sequencer (190)
-[2018.05.16-18.54.44:889][104]LogModuleManager: Shutting down and abandoning module AssetTools (188)
-[2018.05.16-18.54.45:009][104]LogModuleManager: Shutting down and abandoning module MessageLog (187)
-[2018.05.16-18.54.45:009][104]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
-[2018.05.16-18.54.45:009][104]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
-[2018.05.16-18.54.45:154][104]LogModuleManager: Shutting down and abandoning module Slate (178)
-[2018.05.16-18.54.45:154][104]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
-[2018.05.16-18.54.45:156][104]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
-[2018.05.16-18.54.45:156][104]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
-[2018.05.16-18.54.45:156][104]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
-[2018.05.16-18.54.45:156][104]LogModuleManager: Shutting down and abandoning module Networking (168)
-[2018.05.16-18.54.45:156][104]LogModuleManager: Shutting down and abandoning module Core (164)
-[2018.05.16-18.54.45:156][104]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
-[2018.05.16-18.54.45:546][104]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2018.05.16-18.54.45:546][104]LogDirectoryWatcher: A directory notification for '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/' was aborted.
-[2018.05.16-18.54.45:546][104]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2018.05.16-18.54.45:546][104]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
-[2018.05.16-18.54.45:674][104]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
-[2018.05.16-18.54.45:676][104]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
-[2018.05.16-18.54.45:676][104]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
-[2018.05.16-18.54.45:676][104]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
-[2018.05.16-18.54.45:676][104]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
-[2018.05.16-18.54.45:796][104]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
-[2018.05.16-18.54.45:804][104]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
-[2018.05.16-18.54.45:804][104]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
-[2018.05.16-18.54.45:884][104]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
-[2018.05.16-18.54.45:913][104]LogDerivedDataCache: Shutdown
-[2018.05.16-18.54.45:913][104]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
-[2018.05.16-18.54.45:913][104]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
-[2018.05.16-18.54.45:986][104]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
-[2018.05.16-18.54.46:077][104]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
-[2018.05.16-18.54.46:167][104]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
-[2018.05.16-18.54.46:180][104]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
-[2018.05.16-18.54.46:191][104]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
-[2018.05.16-18.54.46:191][104]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
-[2018.05.16-18.54.46:191][104]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
-[2018.05.16-18.54.46:218][104]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module Messaging (101)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
-[2018.05.16-18.54.46:224][104]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
-[2018.05.16-18.54.46:249][104]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
-[2018.05.16-18.54.46:249][104]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
-[2018.05.16-18.54.46:278][104]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
-[2018.05.16-18.54.46:280][104]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
-[2018.05.16-18.54.46:283][104]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
-[2018.05.16-18.54.46:294][104]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
-[2018.05.16-18.54.46:294][104]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module InputCore (60)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module Settings (58)
-[2018.05.16-18.54.46:298][104]LogModuleManager: Shutting down and abandoning module OculusRift (56)
-[2018.05.16-18.54.46:317][104]LogModuleManager: Shutting down and abandoning module GearVRController (54)
-[2018.05.16-18.54.46:317][104]LogModuleManager: Shutting down and abandoning module GearVR (52)
-[2018.05.16-18.54.46:348][104]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
-[2018.05.16-18.54.46:348][104]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2018.05.16-18.54.46:348][104]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2018.05.16-18.54.46:348][104]LogOnline:Display: Unloading online subsystem: NULL
-[2018.05.16-18.54.46:444][104]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2018.05.16-18.54.46:534][104]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2018.05.16-18.54.46:534][104]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2018.05.16-18.54.46:542][104]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B8CE4CABC-424B-7DE4-7E22-639AEEE4EE0D%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=f0737b824c736c28631198aee30172af%7C8019e3778a0b4ba78522874ce4acdb0a%7C8a4654aa-9b80-41bd-a943-1725ad37d445&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2018.05.16-18.54.46:543][104]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2018.05.16-18.54.46:588][104]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
-[2018.05.16-18.54.46:603][104]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
-[2018.05.16-18.54.46:612][104]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
-[2018.05.16-18.54.46:612][104]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
-[2018.05.16-18.54.46:640][104]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
-[2018.05.16-18.54.46:640][104]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
-[2018.05.16-18.54.46:640][104]LogModuleManager: Shutting down and abandoning module Landscape (24)
-[2018.05.16-18.54.46:640][104]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
-[2018.05.16-18.54.46:657][104]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
-[2018.05.16-18.54.46:696][104]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
-[2018.05.16-18.54.46:696][104]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
-[2018.05.16-18.54.46:710][104]LogModuleManager: Shutting down and abandoning module Renderer (14)
-[2018.05.16-18.54.46:710][104]LogModuleManager: Shutting down and abandoning module Engine (12)
-[2018.05.16-18.54.46:710][104]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
-[2018.05.16-18.54.46:710][104]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
-[2018.05.16-18.54.46:739][104]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2018.05.16-18.54.46:762][104]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2018.05.16-18.54.46:779][104]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2018.05.16-18.54.46:802][104]LogExit: Exiting.
-[2018.05.16-18.54.46:814][104]Log file closed, 05/16/18 19:54:46
+[2018.05.16-21.32.44:501][  0]LogInit: Selected Device Profile: [Windows]
+[2018.05.16-21.32.44:501][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.05.16-21.32.44:569][  0]LogInit: Computer: DESKTOP-46CB9MQ
+[2018.05.16-21.32.44:569][  0]LogInit: User: JoshR
+[2018.05.16-21.32.44:569][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.05.16-21.32.44:569][  0]LogInit: High frequency timer resolution =3.421879 MHz
+[2018.05.16-21.32.44:573][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2018.05.16-21.32.44:573][  0]LogMemory: Platform Memory Stats for Windows
+[2018.05.16-21.32.44:573][  0]LogMemory: Process Physical Memory: 272.79 MB used, 272.79 MB peak
+[2018.05.16-21.32.44:573][  0]LogMemory: Process Virtual Memory: 258.69 MB used, 258.69 MB peak
+[2018.05.16-21.32.44:573][  0]LogMemory: Physical Memory: 4042.25 MB used,  12301.76 MB free, 16344.00 MB total
+[2018.05.16-21.32.44:573][  0]LogMemory: Virtual Memory: 654.72 MB used,  12301.76 MB free, 134217728.00 MB total
+[2018.05.16-21.32.45:152][  0]LogInit: Using OS detected language (en-GB).
+[2018.05.16-21.32.45:152][  0]LogInit: Using OS detected locale (en-GB).
+[2018.05.16-21.32.45:294][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2018.05.16-21.32.47:587][  0]LogD3D11RHI: D3D11 adapters:
+[2018.05.16-21.32.47:631][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2018.05.16-21.32.47:631][  0]LogD3D11RHI:       4043/0/8172 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.05.16-21.32.47:633][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.05.16-21.32.47:633][  0]LogD3D11RHI:       0/0/8172 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.05.16-21.32.47:633][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.05.16-21.32.47:638][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.05.16-21.32.47:639][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2018.05.16-21.32.47:639][  0]LogWindows: EnumDisplayDevices:
+[2018.05.16-21.32.47:639][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2018.05.16-21.32.47:639][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.05.16-21.32.47:639][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.05.16-21.32.47:639][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.05.16-21.32.47:639][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.05.16-21.32.47:639][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2018.05.16-21.32.47:639][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.05.16-21.32.47:639][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.05.16-21.32.47:640][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2018.05.16-21.32.47:670][  0]LogD3D11RHI: Async texture creation enabled
+[2018.05.16-21.32.47:920][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.05.16-21.32.48:028][  0]LogShaderCompilers: Guid format shader working directory is -3 characters bigger than the processId version (../../../../../Users/JoshR/Documents/GitHub/Fuse/Intermediate/Shaders/WorkingDirectory/11384/).
+[2018.05.16-21.32.48:029][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/JoshR/AppData/Local/Temp/UnrealShaderWorkingDir/58AF969049389E6BE14533A6962B4F69/'.
+[2018.05.16-21.32.48:041][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2018.05.16-21.32.51:043][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2018.05.16-21.32.51:097][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2018.05.16-21.32.51:139][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2018.05.16-21.32.51:180][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2018.05.16-21.32.51:228][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2018.05.16-21.32.51:268][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2018.05.16-21.32.51:309][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.05.16-21.32.51:349][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2018.05.16-21.32.51:385][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2018.05.16-21.32.51:433][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2018.05.16-21.32.51:473][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2018.05.16-21.32.51:513][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2018.05.16-21.32.51:553][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2018.05.16-21.32.51:594][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2018.05.16-21.32.51:635][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2018.05.16-21.32.51:717][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2018.05.16-21.32.51:717][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.05.16-21.32.51:750][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2018.05.16-21.32.51:849][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2018.05.16-21.32.51:870][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2018.05.16-21.32.51:910][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2018.05.16-21.32.51:950][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.05.16-21.32.51:991][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2018.05.16-21.32.52:034][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2018.05.16-21.32.52:034][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2018.05.16-21.32.53:089][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2018.05.16-21.32.53:492][  0]LogDerivedDataCache: Loaded boot cache 0.40s 90MB C:/Users/JoshR/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.05.16-21.32.53:492][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/JoshR/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2018.05.16-21.32.53:492][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Users/JoshR/Documents/GitHub/Fuse/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.05.16-21.32.53:492][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.05.16-21.32.53:492][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Users/JoshR/Documents/GitHub/Fuse/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.05.16-21.32.53:492][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.05.16-21.32.53:566][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.05.16-21.32.53:590][  0]LogDerivedDataCache: Using Local data cache path C:/Users/JoshR/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.05.16-21.32.53:637][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.05.16-21.32.53:675][  0]LogSlate: Using Freetype 2.6.0
+[2018.05.16-21.32.53:724][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.05.16-21.32.53:724][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.05.16-21.32.59:942][  0]LogInit: Selected Device Profile: [Windows]
+[2018.05.16-21.33.01:024][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.05.16-21.33.01:719][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.05.16-21.33.01:916][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.05.16-21.33.01:994][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.05.16-21.33.01:994][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2018.05.16-21.33.01:994][  0]LogMeshUtilities: No automatic mesh merging module available
+[2018.05.16-21.33.05:960][  0]LogNetVersion: RPG_Game , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2586067795)
+[2018.05.16-21.33.06:265][  0]LogAssetRegistry: FAssetRegistry took 0.0324 seconds to start up
+[2018.05.16-21.33.06:697][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.250914 seconds
+[2018.05.16-21.33.06:702][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2018.05.16-21.33.06:702][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2018.05.16-21.33.06:702][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.05.16-21.33.06:762][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.05.16-21.33.19:639][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
+[2018.05.16-21.33.19:737][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.05.16-21.33.19:788][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.05.16-21.33.21:087][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.05.16-21.33.21:823][  0]SourceControl: Info Source control is disabled
+[2018.05.16-21.33.24:261][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.05.16-21.33.25:433][  0]LogEngine: Initializing Engine...
+[2018.05.16-21.33.25:479][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.05.16-21.33.26:025][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.05.16-21.33.26:025][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.05.16-21.33.26:338][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.05.16-21.33.26:430][  0]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.16-21.33.26:440][  0]LogInit: FAudioDevice initialized.
+[2018.05.16-21.33.26:475][  0]LogDerivedDataCache: Saved boot cache 0.04s 90MB C:/Users/JoshR/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.05.16-21.33.26:482][  0]LogInit: Texture streaming: Enabled
+[2018.05.16-21.33.26:596][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.05.16-21.33.27:181][  0]LogInit: Transaction tracking system initialized
+[2018.05.16-21.33.27:645][  0]BlueprintLog: New page: Editor Load
+[2018.05.16-21.33.29:422][  0]LocalizationService: Info Localization service is disabled
+[2018.05.16-21.33.30:387][  0]LogConsoleResponse:Display: 
+[2018.05.16-21.33.33:240][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.05.16-21.33.33:240][  0]LogFileCache: Scanning file cache for directory 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/' took 0.02s
+[2018.05.16-21.33.33:240][  0]LogCook:Display: Mobile HDR setting 1
+[2018.05.16-21.33.36:651][  0]Cmd: MAP LOAD FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.05.16-21.33.36:660][  0]LightingResults: New page: Lighting Build
+[2018.05.16-21.33.36:770][  0]MapCheck: New page: Map Check
+[2018.05.16-21.33.36:770][  0]LightingResults: New page: Lighting Build
+[2018.05.16-21.33.38:116][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
+[2018.05.16-21.33.38:116][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/PressurePad/Button_Base.uasset.
+[2018.05.16-21.33.38:116][  0]LoadErrors:Error: Error /Game/Assets/PressurePad/Button_Base : Can't find file for asset. /Game/Materials/ButtonMaterial
+[2018.05.16-21.33.38:116][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
+[2018.05.16-21.33.38:116][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/PressurePad/Button_Base.uasset.
+[2018.05.16-21.33.38:116][  0]LoadErrors:Error: Error /Game/Assets/PressurePad/Button_Base : Can't find file for asset. /Game/Materials/ButtonMaterial
+[2018.05.16-21.33.38:129][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
+[2018.05.16-21.33.38:129][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/PressurePad/Button_Push.uasset.
+[2018.05.16-21.33.38:130][  0]LoadErrors:Error: Error /Game/Assets/PressurePad/Button_Push : Can't find file for asset. /Game/Materials/ButtonMaterial
+[2018.05.16-21.33.38:130][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
+[2018.05.16-21.33.38:130][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/PressurePad/Button_Push.uasset.
+[2018.05.16-21.33.38:130][  0]LoadErrors:Error: Error /Game/Assets/PressurePad/Button_Push : Can't find file for asset. /Game/Materials/ButtonMaterial
+[2018.05.16-21.33.38:980][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
+[2018.05.16-21.33.38:980][  0]LoadErrors: Info Failed to load /Game/Materials/ButtonMaterial.ButtonMaterial Referenced by Button_Push
+[2018.05.16-21.33.38:980][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading NULL.
+[2018.05.16-21.33.38:980][  0]LoadErrors: Info Failed to load /Game/Materials/ButtonMaterial.ButtonMaterial Referenced by Button_Push
+[2018.05.16-21.33.38:981][  0]LogLinker:Warning: Can't find file '/Game/Materials/ButtonMaterial'
+[2018.05.16-21.33.38:981][  0]LoadErrors: Info Failed to load /Game/Materials/ButtonMaterial.ButtonMaterial Referenced by Button_Base
+[2018.05.16-21.33.38:981][  0]LogLinker:Warning: Can't find file for asset '/Game/Materials/ButtonMaterial' while loading NULL.
+[2018.05.16-21.33.38:981][  0]LoadErrors: Info Failed to load /Game/Materials/ButtonMaterial.ButtonMaterial Referenced by Button_Base
+[2018.05.16-21.33.39:672][  0]LogAIModule: Creating AISystem for world RiverDale
+[2018.05.16-21.33.40:088][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.05.16-21.33.40:151][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.05.16-21.33.40:239][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 87.661ms to complete.
+[2018.05.16-21.33.40:239][  0]LogFileHelpers: Loading map 'RiverDale' took 3.604
+[2018.05.16-21.33.41:620][  0]LogCollectionManager: Loaded 0 collections in 0.001349 seconds
+[2018.05.16-21.33.41:767][  0]LogFileCache: Scanning file cache for directory 'D:/Users/JoshR/Documents/GitHub/Fuse/Saved/Collections/' took 0.01s
+[2018.05.16-21.33.41:768][  0]LogFileCache: Scanning file cache for directory 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/Developers/JoshR/Collections/' took 0.01s
+[2018.05.16-21.33.41:768][  0]LogFileCache: Scanning file cache for directory 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/Collections/' took 0.01s
+[2018.05.16-21.33.41:768][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.05.16-21.33.41:778][  0]LogContentBrowser: Native class hierarchy populated in 0.0078 seconds. Added 2343 classes and 497 folders.
+[2018.05.16-21.33.41:895][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2018.05.16-21.33.42:585][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2018.05.16-21.33.42:676][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2018.05.16-21.33.43:255][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2018.05.16-21.33.43:335][  0]LogSlate: Took 0.013326 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.05.16-21.33.43:344][  0]LogSlate: Took 0.007991 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.05.16-21.33.43:380][  0]LogSlate: Took 0.007786 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.05.16-21.33.43:666][  0]LogRenderer: Reallocating scene render targets to support 1692x692 NumSamples 1 (Frame:1).
+[2018.05.16-21.33.43:970][  0]LogSlate: Took 0.011276 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.05.16-21.33.44:114][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2018.05.16-21.33.44:211][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2018.05.16-21.33.44:212][  0]LogLoad: (Engine Initialization) Total time: 70.24 seconds
+[2018.05.16-21.33.44:212][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.65 seconds
+[2018.05.16-21.33.44:212][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.05.16-21.33.44:212][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.05.16-21.33.44:248][  0]LogOcInput: OculusInput pre-init called
+[2018.05.16-21.33.44:248][  0]LogHMD: Starting GearVRController plugin
+[2018.05.16-21.33.44:328][  0]SourceControl: Info On branch master
+[2018.05.16-21.33.44:328][  0]SourceControl: Info Your branch is up to date with 'origin/master'.
+[2018.05.16-21.33.44:328][  0]SourceControl: Info Changes not staged for commit:
+[2018.05.16-21.33.44:328][  0]SourceControl: Info   (use "git add <file>..." to update what will be committed)
+[2018.05.16-21.33.44:328][  0]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
+[2018.05.16-21.33.44:328][  0]SourceControl: Info 	modified:   Intermediate/CachedAssetRegistry.bin
+[2018.05.16-21.33.44:328][  0]SourceControl: Info 	modified:   Saved/Config/Windows/Editor.ini
+[2018.05.16-21.33.44:328][  0]SourceControl: Info 	modified:   Saved/Config/Windows/Engine.ini
+[2018.05.16-21.33.44:328][  0]SourceControl: Info 	modified:   Saved/Logs/RPG_Game.log
+[2018.05.16-21.33.44:328][  0]SourceControl: Info Untracked files:
+[2018.05.16-21.33.44:328][  0]SourceControl: Info   (use "git add <file>..." to include in what will be committed)
+[2018.05.16-21.33.44:328][  0]SourceControl: Info 	Saved/Config/CrashReportClient/UE4CC-Windows-331744474C98509C2AA92B8E8356F599/
+[2018.05.16-21.33.44:328][  0]SourceControl: Info 	Saved/Logs/RPG_Game-backup-2018.05.16-22.32.43.log
+[2018.05.16-21.33.44:328][  0]SourceControl: Info no changes added to commit (use "git add" and/or "git commit -a")
+[2018.05.16-21.33.44:333][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.05.16-21.33.44:788][  2]LogAssetRegistry: Asset discovery search completed in 38.5445 seconds
+[2018.05.16-21.33.44:790][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.05.16-21.33.44:790][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000024 seconds (updated 0 objects)
+[2018.05.16-21.34.55:942][493]LogSlate: Took 0.000272 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.05.16-21.34.56:050][493]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 E:/FMP/3D/FBX/Misc/Wall Light.fbx)
+[2018.05.16-21.34.56:127][493]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2018.05.16-21.34.56:127][493]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2018.05.16-21.34.56:127][493]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2018.05.16-21.34.56:127][493]LogFbx: ItemName: NodeAttribute, ItemCount : 6
+[2018.05.16-21.34.56:127][493]LogFbx: ItemName: Model, ItemCount : 13
+[2018.05.16-21.34.56:127][493]LogFbx: ItemName: Geometry, ItemCount : 7
+[2018.05.16-21.34.56:127][493]LogFbx: ItemName: Material, ItemCount : 3
+[2018.05.16-21.34.56:135][493]LogFbx: Loading FBX Scene from E:/FMP/3D/FBX/Misc/Wall Light.fbx
+[2018.05.16-21.34.56:147][493]LogFbx: FBX Scene Loaded Succesfully
+[2018.05.16-21.34.59:591][493]LogFbx: Loading FBX Scene from E:/FMP/3D/FBX/Misc/Wall Light.fbx
+[2018.05.16-21.34.59:598][493]LogFbx: FBX Scene Loaded Succesfully
+[2018.05.16-21.34.59:625][493]LogLinker: Can't find file '/Game/Assets/Lights/M_Grey'
+[2018.05.16-21.34.59:625][493]LogLinker: Can't find file '/Game/Assets/Lights/M_Grey'
+[2018.05.16-21.34.59:668][493]LogMaterial: Missing cached shader map for material M_Grey, compiling. 
+[2018.05.16-21.34.59:706][493]LogFbx:Warning: Triangulating static mesh polySurface1
+[2018.05.16-21.34.59:723][493]LogStaticMesh: Building static mesh Wall_Light_polySurface1...
+[2018.05.16-21.34.59:768][493]LogStaticMesh: Built static mesh [0.05s] /Game/Assets/Lights/Wall_Light_polySurface1.Wall_Light_polySurface1
+[2018.05.16-21.34.59:794][493]LogFbx:Warning: Triangulating static mesh polySurface2
+[2018.05.16-21.34.59:799][493]LogStaticMesh: Building static mesh Wall_Light_polySurface2...
+[2018.05.16-21.34.59:801][493]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/Lights/Wall_Light_polySurface2.Wall_Light_polySurface2
+[2018.05.16-21.34.59:807][493]LogLinker: Can't find file '/Game/Assets/Lights/M_White'
+[2018.05.16-21.34.59:807][493]LogLinker: Can't find file '/Game/Assets/Lights/M_White'
+[2018.05.16-21.34.59:811][493]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2018.05.16-21.34.59:825][493]LogFbx:Warning: Triangulating static mesh polySurface3
+[2018.05.16-21.34.59:835][493]LogStaticMesh: Building static mesh Wall_Light_polySurface3...
+[2018.05.16-21.34.59:836][493]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/Lights/Wall_Light_polySurface3.Wall_Light_polySurface3
+[2018.05.16-21.34.59:843][493]LogFbx:Warning: Triangulating static mesh polySurface4
+[2018.05.16-21.34.59:847][493]LogStaticMesh: Building static mesh Wall_Light_polySurface4...
+[2018.05.16-21.34.59:849][493]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/Lights/Wall_Light_polySurface4.Wall_Light_polySurface4
+[2018.05.16-21.34.59:857][493]LogFbx:Warning: Triangulating static mesh polySurface5
+[2018.05.16-21.34.59:879][493]LogStaticMesh: Building static mesh Wall_Light_polySurface5...
+[2018.05.16-21.34.59:887][493]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/Lights/Wall_Light_polySurface5.Wall_Light_polySurface5
+[2018.05.16-21.34.59:896][493]LogFbx:Warning: Triangulating static mesh pCylinder11
+[2018.05.16-21.34.59:898][493]LogStaticMesh: Building static mesh Wall_Light_pCylinder11...
+[2018.05.16-21.34.59:899][493]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/Lights/Wall_Light_pCylinder11.Wall_Light_pCylinder11
+[2018.05.16-21.34.59:905][493]LogFbx:Warning: Triangulating static mesh pCylinder12
+[2018.05.16-21.34.59:907][493]LogStaticMesh: Building static mesh Wall_Light_pCylinder12...
+[2018.05.16-21.34.59:909][493]LogStaticMesh: Built static mesh [0.00s] /Game/Assets/Lights/Wall_Light_pCylinder12.Wall_Light_pCylinder12
+[2018.05.16-21.34.59:927][493]FBXImport:Warning: Warning Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
+[2018.05.16-21.34.59:927][493]FBXImport:Warning: Warning Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
+[2018.05.16-21.34.59:927][493]FBXImport:Warning: Warning Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
+[2018.05.16-21.34.59:927][493]FBXImport:Warning: Warning Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
+[2018.05.16-21.34.59:927][493]FBXImport:Warning: Warning Warning: The imported mesh is very small. This is most likely an issue with the units used when exporting to FBX. 
+[2018.05.16-21.36.13:694][267]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 E:/FMP/3D/FBX/Misc/Wall Light.fbx)
+[2018.05.16-21.36.13:697][267]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2018.05.16-21.36.13:697][267]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2018.05.16-21.36.13:697][267]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2018.05.16-21.36.13:697][267]LogFbx: ItemName: NodeAttribute, ItemCount : 15
+[2018.05.16-21.36.13:697][267]LogFbx: ItemName: Model, ItemCount : 16
+[2018.05.16-21.36.13:697][267]LogFbx: ItemName: Geometry, ItemCount : 1
+[2018.05.16-21.36.13:697][267]LogFbx: ItemName: Material, ItemCount : 3
+[2018.05.16-21.36.13:701][267]LogFbx: Loading FBX Scene from E:/FMP/3D/FBX/Misc/Wall Light.fbx
+[2018.05.16-21.36.13:709][267]LogFbx: FBX Scene Loaded Succesfully
+[2018.05.16-21.36.14:553][267]LogFbx: Loading FBX Scene from E:/FMP/3D/FBX/Misc/Wall Light.fbx
+[2018.05.16-21.36.14:561][267]LogFbx: FBX Scene Loaded Succesfully
+[2018.05.16-21.36.14:565][267]LogMaterial: Missing cached shader map for material M_Grey, compiling. 
+[2018.05.16-21.36.14:585][267]LogMaterial: Missing cached shader map for material M_White, compiling. 
+[2018.05.16-21.36.14:605][267]LogFbx:Warning: Triangulating static mesh polySurface2
+[2018.05.16-21.36.14:638][267]LogStaticMesh: Building static mesh Wall_Light...
+[2018.05.16-21.36.14:652][267]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/Lights/Wall_Light.Wall_Light
+[2018.05.16-21.36.17:823][476]LogSlate: Took 0.000302 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.05.16-21.36.18:014][476]LogRenderer: Reallocating scene render targets to support 1912x912 NumSamples 1 (Frame:1).
+[2018.05.16-21.36.32:251][989]LogActorFactory: Actor Factory created Wall_Light
+[2018.05.16-21.36.32:721][ 31]LogActorFactory: Actor Factory created Wall_Light
+[2018.05.16-21.36.34:340][177]Cmd: DELETE
+[2018.05.16-21.36.34:350][177]Cmd: ACTOR DELETE
+[2018.05.16-21.36.34:563][177]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.05.16-21.36.34:590][177]LogEditorActor: Deleted 1 Actors (0.074 secs)
+[2018.05.16-21.36.47:138][550]LogActorFactory: Actor Factory created Wall_Light
+[2018.05.16-21.36.47:765][617]LogActorFactory: Actor Factory created Wall_Light
+[2018.05.16-21.36.54:659][364]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.05.16-21.37.00:554][ 43]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.05.16-21.37.06:774][726]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight2)
+[2018.05.16-21.37.14:844][667]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_Light)
+[2018.05.16-21.37.16:397][811]LogTemp: Repeting last play command: Selected Viewport
+[2018.05.16-21.37.16:624][811]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.37.16:641][811]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.16-21.37.16:695][811]PIE: New page: PIE session: RiverDale (16 May 2018 23:37:16)
+[2018.05.16-21.37.16:704][811]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
+[2018.05.16-21.37.16:791][811]LogPlayLevel: PIE: StaticDuplicateObject took: (0.087119s)
+[2018.05.16-21.37.16:792][811]LogAIModule: Creating AISystem for world RiverDale
+[2018.05.16-21.37.16:792][811]LogPlayLevel: PIE: World Init took: (0.000545s)
+[2018.05.16-21.37.16:803][811]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.098957s)
+[2018.05.16-21.37.16:839][811]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.16-21.37.16:845][811]LogInit: FAudioDevice initialized.
+[2018.05.16-21.37.16:924][811]LogLoad: Game class is 'FuseGM_C'
+[2018.05.16-21.37.17:003][811]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-22.37.17
+[2018.05.16-21.37.17:062][811]LogWorld: Bringing up level for play took: 0.080236
+[2018.05.16-21.37.17:243][811]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 11 classes and 0 folders.
+[2018.05.16-21.37.17:338][811]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale -0.265
+[2018.05.16-21.37.17:339][811]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.37.17:486][812]Cmd: LevelEditor.ToggleImmersive
+[2018.05.16-21.37.17:657][813]LogRenderer: Reallocating scene render targets to support 2476x1016 NumSamples 1 (Frame:3).
+[2018.05.16-21.37.17:720][814]LogRenderer: Reallocating scene render targets to support 2560x1052 NumSamples 1 (Frame:5).
+[2018.05.16-21.37.28:786][973]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.37.28:898][973]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.37.30:295][ 93]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight2)
+[2018.05.16-21.37.36:524][743]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.05.16-21.37.44:207][576]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight2)
+[2018.05.16-21.37.51:131][375]LogSlate: Took 0.012519 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.05.16-21.38.07:440][308]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.05.16-21.38.12:942][921]LogTemp: Repeting last play command: Selected Viewport
+[2018.05.16-21.38.12:956][921]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.38.12:957][921]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.16-21.38.12:957][921]PIE: New page: PIE session: RiverDale (16 May 2018 23:38:12)
+[2018.05.16-21.38.12:957][921]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
+[2018.05.16-21.38.12:995][921]LogPlayLevel: PIE: StaticDuplicateObject took: (0.037840s)
+[2018.05.16-21.38.12:995][921]LogAIModule: Creating AISystem for world RiverDale
+[2018.05.16-21.38.12:996][921]LogPlayLevel: PIE: World Init took: (0.000700s)
+[2018.05.16-21.38.12:996][921]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.038854s)
+[2018.05.16-21.38.13:010][921]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.16-21.38.13:015][921]LogInit: FAudioDevice initialized.
+[2018.05.16-21.38.13:048][921]LogLoad: Game class is 'FuseGM_C'
+[2018.05.16-21.38.13:057][921]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-22.38.13
+[2018.05.16-21.38.13:057][921]LogWorld: Bringing up level for play took: 0.008716
+[2018.05.16-21.38.13:059][921]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale -0.544
+[2018.05.16-21.38.13:064][921]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.38.13:566][974]Cmd: LevelEditor.ToggleImmersive
+[2018.05.16-21.38.22:282][825]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.38.22:382][825]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.38.24:024][966]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight3)
+[2018.05.16-21.38.29:078][565]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight2)
+[2018.05.16-21.38.33:119][ 37]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_Light)
+[2018.05.16-21.38.34:852][229]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight2)
+[2018.05.16-21.38.38:292][634]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight3)
+[2018.05.16-21.38.49:629][965]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight2)
+[2018.05.16-21.38.53:284][396]LogTemp: Repeting last play command: Selected Viewport
+[2018.05.16-21.38.53:298][396]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.38.53:298][396]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.16-21.38.53:298][396]PIE: New page: PIE session: RiverDale (16 May 2018 23:38:53)
+[2018.05.16-21.38.53:298][396]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_RiverDale
+[2018.05.16-21.38.53:336][396]LogPlayLevel: PIE: StaticDuplicateObject took: (0.037547s)
+[2018.05.16-21.38.53:336][396]LogAIModule: Creating AISystem for world RiverDale
+[2018.05.16-21.38.53:336][396]LogPlayLevel: PIE: World Init took: (0.000736s)
+[2018.05.16-21.38.53:337][396]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/RiverDale.RiverDale to /Game/Maps/UEDPIE_0_RiverDale.RiverDale (0.038670s)
+[2018.05.16-21.38.53:349][396]LogInit: XAudio2 using 'Speakers (Razer Seiren X)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.05.16-21.38.53:355][396]LogInit: FAudioDevice initialized.
+[2018.05.16-21.38.53:388][396]LogLoad: Game class is 'FuseGM_C'
+[2018.05.16-21.38.53:397][396]LogWorld: Bringing World /Game/Maps/UEDPIE_0_RiverDale.RiverDale up for play (max tick rate 0) at 2018.05.16-22.38.53
+[2018.05.16-21.38.53:398][396]LogWorld: Bringing up level for play took: 0.008798
+[2018.05.16-21.38.53:399][396]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_RiverDale -0.204
+[2018.05.16-21.38.53:399][396]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.38.54:552][531]Cmd: LevelEditor.ToggleImmersive
+[2018.05.16-21.39.06:672][689]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.39.06:747][689]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/RiverDale.RiverDale:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale' with GeneratedClass '/Game/Maps/RiverDale.RiverDale_C' with ClassGeneratedBy '/Game/Maps/RiverDale.RiverDale:PersistentLevel.RiverDale'
+[2018.05.16-21.39.08:204][793]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.05.16-21.39.09:024][838]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight2)
+[2018.05.16-21.39.30:387][375]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.05.16-21.39.36:834][825]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight3)
+[2018.05.16-21.39.42:547][249]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.05.16-21.39.51:943][926]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight2)
+[2018.05.16-21.39.52:651][977]Cmd: DELETE
+[2018.05.16-21.39.52:651][977]Cmd: ACTOR DELETE
+[2018.05.16-21.39.52:652][977]LogEditorActor: Deleted Actor: PointLight
+[2018.05.16-21.39.52:669][977]LogEditorActor: Deleted 1 Actors (0.019 secs)
+[2018.05.16-21.39.53:186][ 29]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall_Light)
+[2018.05.16-21.39.53:325][ 39]Cmd: DELETE
+[2018.05.16-21.39.53:326][ 39]Cmd: ACTOR DELETE
+[2018.05.16-21.39.53:327][ 39]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.05.16-21.39.53:336][ 39]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2018.05.16-21.39.53:742][ 81]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight3)
+[2018.05.16-21.39.53:802][ 82]Cmd: DELETE
+[2018.05.16-21.39.53:802][ 82]Cmd: ACTOR DELETE
+[2018.05.16-21.39.53:803][ 82]LogEditorActor: Deleted Actor: PointLight
+[2018.05.16-21.39.53:810][ 82]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2018.05.16-21.39.57:999][381]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Lights/M_Grey" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/Lights/M_Grey.uasset" SILENT=true
+[2018.05.16-21.39.58:132][381]LogSavePackage: Save=114.72ms
+[2018.05.16-21.39.58:132][381]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/M_Grey6115E9AB4FA081CD0DA8819ADCF3C086.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/Lights/M_Grey.uasset'
+[2018.05.16-21.39.58:137][381]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/Lights/M_Grey.uasset
+[2018.05.16-21.39.58:539][381]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Lights/M_White" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/Lights/M_White.uasset" SILENT=true
+[2018.05.16-21.39.58:549][381]LogSavePackage: Save=8.63ms
+[2018.05.16-21.39.58:549][381]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/M_WhiteB8E85CA748F1AE92905D3B92845CCFCE.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/Lights/M_White.uasset'
+[2018.05.16-21.39.58:553][381]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/Lights/M_White.uasset
+[2018.05.16-21.39.58:860][381]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Assets/Lights/Wall_Light" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/Lights/Wall_Light.uasset" SILENT=true
+[2018.05.16-21.39.58:870][381]LogSavePackage: Save=8.80ms
+[2018.05.16-21.39.58:870][381]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/Wall_LightA59214A6400E6E40CCA0E1BB3EFBEC19.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/Lights/Wall_Light.uasset'
+[2018.05.16-21.39.58:874][381]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Assets/Lights/Wall_Light.uasset
+[2018.05.16-21.39.59:457][381]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.05.16-21.40.00:229][381]LogSavePackage: Save=740.26ms
+[2018.05.16-21.40.00:229][381]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDaleF04326074B13C8BF02CB1FB41F6F4752.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap'
+[2018.05.16-21.40.00:234][381]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap
+[2018.05.16-21.40.00:273][381]LogFileHelpers: Saving map 'RiverDale' took 1.114
+[2018.05.16-21.40.04:941][897]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.05.16-21.40.05:522][897]LogSavePackage: Save=570.73ms
+[2018.05.16-21.40.05:522][897]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDaleA2AE8FBC4E269862EB329F9EB986F46C.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap'
+[2018.05.16-21.40.05:525][897]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale.umap
+[2018.05.16-21.40.05:621][897]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/RiverDale_BuiltData" FILE="../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale_BuiltData.uasset" SILENT=true
+[2018.05.16-21.40.06:717][897]LogSavePackage: Save=941.88ms
+[2018.05.16-21.40.06:717][897]LogSavePackage: Moving '../../../../../Users/JoshR/Documents/GitHub/Fuse/Saved/RiverDale_BuiltData88A836F749092D956EB65CA025D24F7E.tmp' to '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale_BuiltData.uasset'
+[2018.05.16-21.40.06:721][897]LogSavePackage:Display: Finished SavePackage ../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/Maps/RiverDale_BuiltData.uasset
+[2018.05.16-21.40.09:289][175]SourceControl: Info fatal: D:/Program Files/UE_4.16/Engine/Content/: 'D:/Program Files/UE_4.16/Engine/Content/' is outside repository
+[2018.05.16-21.40.20:000][175]LogSourceControl: FGitCheckInWorker: commit successful
+[2018.05.16-21.40.20:116][175]SourceControl: Info [master c5c2789] Added Wall Light Asset
+[2018.05.16-21.40.20:116][175]SourceControl: Info  5 files changed, 0 insertions(+), 0 deletions(-)
+[2018.05.16-21.40.20:116][175]SourceControl: Info  create mode 100644 Content/Assets/Lights/M_Grey.uasset
+[2018.05.16-21.40.20:116][175]SourceControl: Info  create mode 100644 Content/Assets/Lights/M_White.uasset
+[2018.05.16-21.40.20:116][175]SourceControl: Info  create mode 100644 Content/Assets/Lights/Wall_Light.uasset
+[2018.05.16-21.40.20:121][175]SourceControl: Info Commited [master c5c2789] Added Wall Light Asset.
+[2018.05.16-21.40.21:928][377]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2018.05.16-21.40.22:273][378]Cmd: QUIT_EDITOR
+[2018.05.16-21.40.23:129][378]LogExit: Preparing to exit.
+[2018.05.16-21.40.24:367][378]LogDirectoryWatcher: A directory notification for 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/' was aborted.
+[2018.05.16-21.40.24:468][378]LogExit: Editor shut down
+[2018.05.16-21.40.24:472][378]LogExit: Transaction tracking system shut down
+[2018.05.16-21.40.25:460][378]LogObj: Freed 0b from 0 cluster array pools.
+[2018.05.16-21.40.25:460][378]LogExit: Object subsystem successfully closed.
+[2018.05.16-21.40.25:547][378]LogD3D11RHI: Shutdown
+[2018.05.16-21.40.25:547][378]LogD3D11RHI: CleanupD3DDevice
+[2018.05.16-21.40.25:659][378]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.05.16-21.40.26:368][378]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (532)
+[2018.05.16-21.40.26:368][378]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (530)
+[2018.05.16-21.40.26:368][378]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (528)
+[2018.05.16-21.40.26:376][378]LogModuleManager: Shutting down and abandoning module CrashTracker (526)
+[2018.05.16-21.40.26:376][378]LogModuleManager: Shutting down and abandoning module SceneOutliner (524)
+[2018.05.16-21.40.26:376][378]LogModuleManager: Shutting down and abandoning module AddContentDialog (522)
+[2018.05.16-21.40.26:392][378]LogDirectoryWatcher: A directory notification for 'D:/Program Files/UE_4.16/FeaturePacks/' was aborted.
+[2018.05.16-21.40.26:393][378]LogModuleManager: Shutting down and abandoning module WidgetCarousel (521)
+[2018.05.16-21.40.26:393][378]LogModuleManager: Shutting down and abandoning module EditorWidgets (518)
+[2018.05.16-21.40.26:393][378]LogModuleManager: Shutting down and abandoning module CollectionManager (516)
+[2018.05.16-21.40.26:393][378]LogDirectoryWatcher: A directory notification for 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/Collections/' was aborted.
+[2018.05.16-21.40.26:393][378]LogDirectoryWatcher: A directory notification for 'D:/Users/JoshR/Documents/GitHub/Fuse/Content/Developers/JoshR/Collections/' was aborted.
+[2018.05.16-21.40.26:393][378]LogDirectoryWatcher: A directory notification for 'D:/Users/JoshR/Documents/GitHub/Fuse/Saved/Collections/' was aborted.
+[2018.05.16-21.40.26:393][378]LogModuleManager: Shutting down and abandoning module StatsViewer (514)
+[2018.05.16-21.40.26:406][378]LogModuleManager: Shutting down and abandoning module FoliageEdit (512)
+[2018.05.16-21.40.26:406][378]LogModuleManager: Shutting down and abandoning module LandscapeEditor (510)
+[2018.05.16-21.40.26:431][378]LogModuleManager: Shutting down and abandoning module MeshPaintMode (508)
+[2018.05.16-21.40.26:431][378]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (506)
+[2018.05.16-21.40.26:431][378]LogModuleManager: Shutting down and abandoning module ActorPickerMode (504)
+[2018.05.16-21.40.26:431][378]LogModuleManager: Shutting down and abandoning module GeometryMode (502)
+[2018.05.16-21.40.26:431][378]LogModuleManager: Shutting down and abandoning module TextureAlignMode (500)
+[2018.05.16-21.40.26:431][378]LogModuleManager: Shutting down and abandoning module BspMode (498)
+[2018.05.16-21.40.26:434][378]LogModuleManager: Shutting down and abandoning module HardwareSurvey (496)
+[2018.05.16-21.40.26:434][378]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (494)
+[2018.05.16-21.40.26:434][378]LogModuleManager: Shutting down and abandoning module AutomationWorker (492)
+[2018.05.16-21.40.26:443][378]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (490)
+[2018.05.16-21.40.26:454][378]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (488)
+[2018.05.16-21.40.26:488][378]LogModuleManager: Shutting down and abandoning module PlacementMode (487)
+[2018.05.16-21.40.26:488][378]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (484)
+[2018.05.16-21.40.26:488][378]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (482)
+[2018.05.16-21.40.26:488][378]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (480)
+[2018.05.16-21.40.26:489][378]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (478)
+[2018.05.16-21.40.26:489][378]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (476)
+[2018.05.16-21.40.26:489][378]LogModuleManager: Shutting down and abandoning module Media (475)
+[2018.05.16-21.40.26:489][378]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (472)
+[2018.05.16-21.40.26:489][378]LogModuleManager: Shutting down and abandoning module CharacterAI (470)
+[2018.05.16-21.40.26:489][378]LogModuleManager: Shutting down and abandoning module AudioCapture (468)
+[2018.05.16-21.40.26:499][378]LogModuleManager: Shutting down and abandoning module SequenceRecorder (467)
+[2018.05.16-21.40.26:507][378]LogModuleManager: Shutting down and abandoning module SmartSnapping (464)
+[2018.05.16-21.40.26:507][378]LogModuleManager: Shutting down and abandoning module SessionServices (462)
+[2018.05.16-21.40.26:507][378]LogModuleManager: Shutting down and abandoning module ViewportSnapping (460)
+[2018.05.16-21.40.26:507][378]LogModuleManager: Shutting down and abandoning module ViewportInteraction (458)
+[2018.05.16-21.40.26:507][378]LogModuleManager: Shutting down and abandoning module ClothPainter (456)
+[2018.05.16-21.40.26:528][378]LogModuleManager: Shutting down and abandoning module LogVisualizer (454)
+[2018.05.16-21.40.26:541][378]LogModuleManager: Shutting down and abandoning module IntroTutorials (452)
+[2018.05.16-21.40.26:572][378]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (451)
+[2018.05.16-21.40.26:586][378]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (448)
+[2018.05.16-21.40.26:586][378]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (446)
+[2018.05.16-21.40.26:598][378]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (444)
+[2018.05.16-21.40.26:598][378]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (442)
+[2018.05.16-21.40.26:598][378]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (441)
+[2018.05.16-21.40.26:947][378]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (438)
+[2018.05.16-21.40.26:947][378]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (436)
+[2018.05.16-21.40.26:947][378]LogModuleManager: Shutting down and abandoning module InputBindingEditor (434)
+[2018.05.16-21.40.27:160][378]LogModuleManager: Shutting down and abandoning module MergeActors (432)
+[2018.05.16-21.40.27:165][378]LogModuleManager: Shutting down and abandoning module SizeMap (430)
+[2018.05.16-21.40.27:165][378]LogModuleManager: Shutting down and abandoning module TreeMap (428)
+[2018.05.16-21.40.27:169][378]LogModuleManager: Shutting down and abandoning module ReferenceViewer (426)
+[2018.05.16-21.40.27:177][378]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (424)
+[2018.05.16-21.40.27:190][378]LogModuleManager: Shutting down and abandoning module LocalizationService (423)
+[2018.05.16-21.40.27:198][378]LogModuleManager: Shutting down and abandoning module HardwareTargeting (420)
+[2018.05.16-21.40.27:198][378]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (418)
+[2018.05.16-21.40.27:205][378]LogModuleManager: Shutting down and abandoning module UndoHistory (416)
+[2018.05.16-21.40.27:205][378]LogModuleManager: Shutting down and abandoning module UserFeedback (414)
+[2018.05.16-21.40.27:205][378]LogModuleManager: Shutting down and abandoning module XmlParser (412)
+[2018.05.16-21.40.27:205][378]LogModuleManager: Shutting down and abandoning module Blutility (410)
+[2018.05.16-21.40.27:215][378]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (408)
+[2018.05.16-21.40.27:215][378]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (407)
+[2018.05.16-21.40.27:215][378]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (404)
+[2018.05.16-21.40.27:215][378]LogModuleManager: Shutting down and abandoning module SettingsEditor (402)
+[2018.05.16-21.40.27:222][378]LogModuleManager: Shutting down and abandoning module ProjectLauncher (400)
+[2018.05.16-21.40.27:238][378]LogModuleManager: Shutting down and abandoning module SessionFrontend (398)
+[2018.05.16-21.40.27:256][378]LogModuleManager: Shutting down and abandoning module ProfilerClient (396)
+[2018.05.16-21.40.27:275][378]LogModuleManager: Shutting down and abandoning module DeviceManager (394)
+[2018.05.16-21.40.27:289][378]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (393)
+[2018.05.16-21.40.27:339][378]LogModuleManager: Shutting down and abandoning module AutomationController (390)
+[2018.05.16-21.40.27:349][378]LogModuleManager: Shutting down and abandoning module AutomationWindow (388)
+[2018.05.16-21.40.27:354][378]LogModuleManager: Shutting down and abandoning module Layers (386)
+[2018.05.16-21.40.27:365][378]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (384)
+[2018.05.16-21.40.27:365][378]LogModuleManager: Shutting down and abandoning module DetailCustomizations (382)
+[2018.05.16-21.40.27:373][378]LogModuleManager: Shutting down and abandoning module PackagesDialog (380)
+[2018.05.16-21.40.27:373][378]LogModuleManager: Shutting down and abandoning module Persona (378)
+[2018.05.16-21.40.27:424][378]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (377)
+[2018.05.16-21.40.27:424][378]LogModuleManager: Shutting down and abandoning module AnimGraph (375)
+[2018.05.16-21.40.27:424][378]LogModuleManager: Shutting down and abandoning module Kismet (372)
+[2018.05.16-21.40.27:439][378]LogModuleManager: Shutting down and abandoning module ClassViewer (370)
+[2018.05.16-21.40.27:439][378]LogModuleManager: Shutting down and abandoning module Toolbox (368)
+[2018.05.16-21.40.27:439][378]LogModuleManager: Shutting down and abandoning module ModuleUI (366)
+[2018.05.16-21.40.27:450][378]LogModuleManager: Shutting down and abandoning module MovieSceneTools (364)
+[2018.05.16-21.40.27:470][378]LogModuleManager: Shutting down and abandoning module OutputLog (362)
+[2018.05.16-21.40.27:483][378]LogModuleManager: Shutting down and abandoning module GammaUI (360)
+[2018.05.16-21.40.27:489][378]LogModuleManager: Shutting down and abandoning module Documentation (358)
+[2018.05.16-21.40.27:489][378]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (356)
+[2018.05.16-21.40.27:489][378]LogModuleManager: Shutting down and abandoning module MovieScene (354)
+[2018.05.16-21.40.27:489][378]LogModuleManager: Shutting down and abandoning module Niagara (352)
+[2018.05.16-21.40.27:489][378]LogModuleManager: Shutting down and abandoning module NiagaraEditor (351)
+[2018.05.16-21.40.27:524][378]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (348)
+[2018.05.16-21.40.27:524][378]LogModuleManager: Shutting down and abandoning module AnalyticsET (346)
+[2018.05.16-21.40.27:524][378]LogModuleManager: Shutting down and abandoning module PortalServices (344)
+[2018.05.16-21.40.27:524][378]LogModuleManager: Shutting down and abandoning module PortalRpc (342)
+[2018.05.16-21.40.27:524][378]LogModuleManager: Shutting down and abandoning module MessagingRpc (340)
+[2018.05.16-21.40.27:524][378]LogModuleManager: Shutting down and abandoning module AIModule (338)
+[2018.05.16-21.40.27:524][378]LogModuleManager: Shutting down and abandoning module GameplayDebugger (337)
+[2018.05.16-21.40.27:524][378]LogModuleManager: Shutting down and abandoning module AITestSuite (335)
+[2018.05.16-21.40.27:533][378]LogModuleManager: Shutting down and abandoning module ProfilerService (332)
+[2018.05.16-21.40.27:695][378]LogModuleManager: Shutting down and abandoning module TaskGraph (330)
+[2018.05.16-21.40.27:714][378]LogModuleManager: Shutting down and abandoning module SubstanceEditor (328)
+[2018.05.16-21.40.27:725][378]LogModuleManager: Shutting down and abandoning module SteamVRController (326)
+[2018.05.16-21.40.27:726][378]LogModuleManager: Shutting down and abandoning module SteamVR (324)
+[2018.05.16-21.40.27:726][378]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (322)
+[2018.05.16-21.40.27:726][378]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (320)
+[2018.05.16-21.40.27:737][378]LogModuleManager: Shutting down and abandoning module OculusLibrary (318)
+[2018.05.16-21.40.27:737][378]LogModuleManager: Shutting down and abandoning module OculusInput (316)
+[2018.05.16-21.40.27:737][378]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (314)
+[2018.05.16-21.40.27:737][378]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (312)
+[2018.05.16-21.40.27:737][378]LogModuleManager: Shutting down and abandoning module CableComponent (310)
+[2018.05.16-21.40.27:737][378]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (308)
+[2018.05.16-21.40.27:738][378]LogModuleManager: Shutting down and abandoning module AndroidPermission (306)
+[2018.05.16-21.40.27:738][378]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (302)
+[2018.05.16-21.40.27:760][378]LogModuleManager: Shutting down and abandoning module HTML5Networking (300)
+[2018.05.16-21.40.27:760][378]LogModuleManager: Shutting down and abandoning module AlembicImporter (298)
+[2018.05.16-21.40.27:768][378]LogModuleManager: Shutting down and abandoning module AlembicLibrary (297)
+[2018.05.16-21.40.27:768][378]LogModuleManager: Shutting down and abandoning module GeometryCache (296)
+[2018.05.16-21.40.27:768][378]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (295)
+[2018.05.16-21.40.27:768][378]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (290)
+[2018.05.16-21.40.27:768][378]LogModuleManager: Shutting down and abandoning module SuperSearch (289)
+[2018.05.16-21.40.27:768][378]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (286)
+[2018.05.16-21.40.27:768][378]LogModuleManager: Shutting down and abandoning module PluginBrowser (284)
+[2018.05.16-21.40.27:795][378]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (282)
+[2018.05.16-21.40.27:813][378]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (280)
+[2018.05.16-21.40.27:813][378]LogModuleManager: Shutting down and abandoning module DesktopPlatform (279)
+[2018.05.16-21.40.27:813][378]LogModuleManager: Shutting down and abandoning module UObjectPlugin (276)
+[2018.05.16-21.40.27:813][378]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (274)
+[2018.05.16-21.40.27:829][378]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (272)
+[2018.05.16-21.40.27:849][378]LogModuleManager: Shutting down and abandoning module GitSourceControl (270)
+[2018.05.16-21.40.27:857][378]LogModuleManager: Shutting down and abandoning module SourceControl (269)
+[2018.05.16-21.40.27:857][378]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (266)
+[2018.05.16-21.40.27:857][378]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (264)
+[2018.05.16-21.40.27:857][378]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (262)
+[2018.05.16-21.40.27:857][378]LogModuleManager: Shutting down and abandoning module Paper2DEditor (260)
+[2018.05.16-21.40.27:877][378]LogModuleManager: Shutting down and abandoning module MeshPaint (259)
+[2018.05.16-21.40.27:887][378]LogModuleManager: Shutting down and abandoning module LevelEditor (257)
+[2018.05.16-21.40.27:894][378]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (256)
+[2018.05.16-21.40.27:908][378]LogModuleManager: Shutting down and abandoning module MainFrame (254)
+[2018.05.16-21.40.27:916][378]LogModuleManager: Shutting down and abandoning module HotReload (253)
+[2018.05.16-21.40.27:925][378]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (248)
+[2018.05.16-21.40.27:929][378]LogModuleManager: Shutting down and abandoning module PhysXVehicles (246)
+[2018.05.16-21.40.27:929][378]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (244)
+[2018.05.16-21.40.27:929][378]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (242)
+[2018.05.16-21.40.27:929][378]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (240)
+[2018.05.16-21.40.27:939][378]LogModuleManager: Shutting down and abandoning module UdpMessaging (238)
+[2018.05.16-21.40.28:039][378]LogModuleManager: Shutting down and abandoning module TcpMessaging (236)
+[2018.05.16-21.40.28:145][378]LogModuleManager: Shutting down and abandoning module SubstanceCore (234)
+[2018.05.16-21.40.28:145][378]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2018.05.16-21.40.28:164][378]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2018.05.16-21.40.28:164][378]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2018.05.16-21.40.28:164][378]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2018.05.16-21.40.28:179][378]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2018.05.16-21.40.28:216][378]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2018.05.16-21.40.28:217][378]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2018.05.16-21.40.28:217][378]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2018.05.16-21.40.28:225][378]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2018.05.16-21.40.28:225][378]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2018.05.16-21.40.28:230][378]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2018.05.16-21.40.28:230][378]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2018.05.16-21.40.28:230][378]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2018.05.16-21.40.28:230][378]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2018.05.16-21.40.28:240][378]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2018.05.16-21.40.28:249][378]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2018.05.16-21.40.28:267][378]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2018.05.16-21.40.28:267][378]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2018.05.16-21.40.28:287][378]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2018.05.16-21.40.28:287][378]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2018.05.16-21.40.28:299][378]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2018.05.16-21.40.28:313][378]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2018.05.16-21.40.28:334][378]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2018.05.16-21.40.28:357][378]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2018.05.16-21.40.28:383][378]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2018.05.16-21.40.28:383][378]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2018.05.16-21.40.28:383][378]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2018.05.16-21.40.28:400][378]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2018.05.16-21.40.28:400][378]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2018.05.16-21.40.28:402][378]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2018.05.16-21.40.28:402][378]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2018.05.16-21.40.28:402][378]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2018.05.16-21.40.28:402][378]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2018.05.16-21.40.28:402][378]LogModuleManager: Shutting down and abandoning module Core (164)
+[2018.05.16-21.40.28:402][378]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2018.05.16-21.40.28:545][378]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2018.05.16-21.40.28:545][378]LogDirectoryWatcher: A directory notification for '../../../../../Users/JoshR/Documents/GitHub/Fuse/Content/' was aborted.
+[2018.05.16-21.40.28:545][378]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2018.05.16-21.40.28:545][378]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2018.05.16-21.40.28:558][378]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2018.05.16-21.40.28:558][378]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2018.05.16-21.40.28:558][378]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2018.05.16-21.40.28:558][378]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2018.05.16-21.40.28:558][378]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2018.05.16-21.40.28:563][378]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2018.05.16-21.40.28:577][378]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2018.05.16-21.40.28:577][378]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2018.05.16-21.40.28:583][378]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2018.05.16-21.40.28:616][378]LogDerivedDataCache: Shutdown
+[2018.05.16-21.40.28:616][378]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2018.05.16-21.40.28:616][378]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2018.05.16-21.40.28:634][378]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2018.05.16-21.40.28:642][378]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2018.05.16-21.40.28:655][378]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2018.05.16-21.40.28:655][378]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2018.05.16-21.40.28:662][378]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2018.05.16-21.40.28:663][378]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2018.05.16-21.40.28:663][378]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2018.05.16-21.40.28:663][378]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2018.05.16-21.40.28:663][378]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2018.05.16-21.40.28:663][378]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2018.05.16-21.40.28:663][378]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2018.05.16-21.40.28:663][378]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2018.05.16-21.40.28:663][378]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2018.05.16-21.40.28:663][378]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2018.05.16-21.40.28:663][378]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2018.05.16-21.40.28:673][378]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2018.05.16-21.40.28:673][378]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2018.05.16-21.40.28:696][378]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2018.05.16-21.40.28:696][378]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2018.05.16-21.40.28:696][378]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2018.05.16-21.40.28:696][378]LogOnline:Display: Unloading online subsystem: NULL
+[2018.05.16-21.40.28:725][378]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2018.05.16-21.40.28:741][378]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2018.05.16-21.40.28:741][378]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.05.16-21.40.28:748][378]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BCBC99F4B-4198-9C17-6395-9BAD91B22EC0%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=f0737b824c736c28631198aee30172af%7C8019e3778a0b4ba78522874ce4acdb0a%7C8a4654aa-9b80-41bd-a943-1725ad37d445&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.05.16-21.40.28:778][378]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2018.05.16-21.40.28:794][378]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2018.05.16-21.40.28:801][378]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2018.05.16-21.40.28:810][378]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2018.05.16-21.40.28:810][378]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2018.05.16-21.40.28:812][378]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2018.05.16-21.40.28:812][378]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2018.05.16-21.40.28:812][378]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2018.05.16-21.40.28:812][378]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2018.05.16-21.40.28:830][378]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2018.05.16-21.40.28:851][378]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2018.05.16-21.40.28:851][378]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2018.05.16-21.40.28:858][378]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2018.05.16-21.40.28:858][378]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2018.05.16-21.40.28:858][378]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2018.05.16-21.40.28:858][378]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2018.05.16-21.40.28:858][378]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.05.16-21.40.28:858][378]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.05.16-21.40.28:858][378]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.05.16-21.40.28:867][378]LogExit: Exiting.
+[2018.05.16-21.40.28:882][378]Log file closed, 05/16/18 22:40:28

@@ -2,6 +2,9 @@
 System Information
 ------------------
 <<<<<<< HEAD
+  DxDiag Previously: Crashed in system information (stage 1). Re-running DxDiag with "dontskip" command line parameter or choosing not to bypass information gathering when prompted might result in DxDiag successfully obtaining this information
+=======
+<<<<<<< HEAD
       Time of this report: 5/8/2018, 12:11:44
              Machine name: C217-14
                Machine Id: {39F26D9A-1F85-437F-B554-1747362198CE}
@@ -32,6 +35,7 @@ System Information
                  Miracast: Available, with HDCP
 Microsoft Graphics Hybrid: Not Supported
            DxDiag Version: 10.00.15063.0000 64bit Unicode
+>>>>>>> 92619dcf9315a101f198716ca93e6f22a1d4bf50
 
 ------------
 DxDiag Notes
@@ -39,17 +43,6 @@ DxDiag Notes
       Display Tab 1: No problems found.
         Sound Tab 1: No problems found.
           Input Tab: No problems found.
-
---------------------
-DirectX Debug Levels
---------------------
-Direct3D:    0/4 (retail)
-DirectDraw:  0/4 (retail)
-DirectInput: 0/5 (retail)
-DirectMusic: 0/5 (retail)
-DirectPlay:  0/9 (retail)
-DirectSound: 0/5 (retail)
-DirectShow:  0/6 (retail)
 
 ---------------
 Display Devices
@@ -150,8 +143,8 @@ Hybrid Graphics GPU: Not Supported
 Sound Devices
 -------------
             Description: Speakers (Realtek High Definition Audio)
- Default Sound Playback: Yes
- Default Voice Playback: Yes
+ Default Sound Playback: No
+ Default Voice Playback: No
             Hardware ID: HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C802F&REV_1001
         Manufacturer ID: 1
              Product ID: 100
@@ -159,14 +152,14 @@ Sound Devices
             Driver Name: RTKVHD64.sys
          Driver Version: 6.00.0001.7945 (English)
       Driver Attributes: Final Retail
-            WHQL Logo'd: Yes
+            WHQL Logo'd: n/a
           Date and Size: 29/09/2016 00:00:00, 5341224 bytes
             Other Files: 
         Driver Provider: Realtek Semiconductor Corp.
          HW Accel Level: Basic
-              Cap Flags: 0xF1F
-    Min/Max Sample Rate: 100, 200000
-Static/Strm HW Mix Bufs: 1, 0
+              Cap Flags: 0x0
+    Min/Max Sample Rate: 0, 0
+Static/Strm HW Mix Bufs: 0, 0
  Static/Strm HW 3D Bufs: 0, 0
               HW Memory: 0
        Voice Management: No
@@ -235,8 +228,12 @@ USB Devices
 <<<<<<< HEAD
 | | Vendor/Product ID: 0x03F0, 0x304A
 =======
+<<<<<<< HEAD
+| | Vendor/Product ID: 0x03F0, 0x304A
+=======
 | | Vendor/Product ID: 0x03F0, 0x1198
 >>>>>>> 8d00f4eab8cdf6be55b15e293898ef8e237321dc
+>>>>>>> 92619dcf9315a101f198716ca93e6f22a1d4bf50
 | | Location: Port_#0006.Hub_#0001
 | | Matching Device ID: USB\COMPOSITE
 | | Service: usbccgp
@@ -246,40 +243,13 @@ USB Devices
 <<<<<<< HEAD
 | | | Vendor/Product ID: 0x03F0, 0x304A
 =======
-| | | Vendor/Product ID: 0x03F0, 0x1198
->>>>>>> 8d00f4eab8cdf6be55b15e293898ef8e237321dc
-| | | Location: 0000.0014.0000.006.000.000.000.000.000
-| | | Matching Device ID: USB\Class_03&SubClass_01
-| | | Service: HidUsb
-| | | Driver: hidusb.sys, 3/18/2017 21:56:35, 40960 bytes
-| | | Driver: hidclass.sys, 3/18/2017 21:56:35, 180736 bytes
-| | | Driver: hidparse.sys, 3/18/2017 21:56:35, 40960 bytes
-| | | 
-| | +-+ HID-compliant mouse
-| | | | Vendor/Product ID: 0x03F0, 0x1198
-| | | | Matching Device ID: HID_DEVICE_SYSTEM_MOUSE
-| | | | Service: mouhid
-| | | | Driver: mouhid.sys, 3/18/2017 21:56:35, 33280 bytes
-| | | | Driver: mouclass.sys, 3/18/2017 21:56:35, 60320 bytes
-| | 
-+-+ USB Composite Device
 <<<<<<< HEAD
-| | Vendor/Product ID: 0x03F0, 0x1198
-=======
-| | Vendor/Product ID: 0x03F0, 0x304A
->>>>>>> 8d00f4eab8cdf6be55b15e293898ef8e237321dc
-| | Location: Port_#0007.Hub_#0001
-| | Matching Device ID: USB\COMPOSITE
-| | Service: usbccgp
-| | Driver: usbccgp.sys, 3/18/2017 21:56:35, 173984 bytes
-| | 
-| +-+ USB Input Device
-<<<<<<< HEAD
-| | | Vendor/Product ID: 0x03F0, 0x1198
-=======
 | | | Vendor/Product ID: 0x03F0, 0x304A
+=======
+| | | Vendor/Product ID: 0x03F0, 0x1198
 >>>>>>> 8d00f4eab8cdf6be55b15e293898ef8e237321dc
-| | | Location: 0000.0014.0000.007.000.000.000.000.000
+>>>>>>> 92619dcf9315a101f198716ca93e6f22a1d4bf50
+| | | Location: 0000.0014.0000.006.000.000.000.000.000
 | | | Matching Device ID: USB\Class_03&SubClass_01
 | | | Service: HidUsb
 | | | Driver: hidusb.sys, 3/18/2017 21:56:35, 40960 bytes
@@ -292,6 +262,45 @@ USB Devices
 | | | | Service: kbdhid
 | | | | Driver: kbdhid.sys, 3/18/2017 21:56:35, 40448 bytes
 | | | | Driver: kbdclass.sys, 3/18/2017 21:56:35, 64416 bytes
+| | 
++-+ USB Composite Device
+<<<<<<< HEAD
+| | Vendor/Product ID: 0x03F0, 0x1198
+=======
+<<<<<<< HEAD
+| | Vendor/Product ID: 0x03F0, 0x1198
+=======
+| | Vendor/Product ID: 0x03F0, 0x304A
+>>>>>>> 8d00f4eab8cdf6be55b15e293898ef8e237321dc
+>>>>>>> 92619dcf9315a101f198716ca93e6f22a1d4bf50
+| | Location: Port_#0007.Hub_#0001
+| | Matching Device ID: USB\COMPOSITE
+| | Service: usbccgp
+| | Driver: usbccgp.sys, 3/18/2017 21:56:35, 173984 bytes
+| | 
+| +-+ USB Input Device
+<<<<<<< HEAD
+| | | Vendor/Product ID: 0x03F0, 0x1198
+=======
+<<<<<<< HEAD
+| | | Vendor/Product ID: 0x03F0, 0x1198
+=======
+| | | Vendor/Product ID: 0x03F0, 0x304A
+>>>>>>> 8d00f4eab8cdf6be55b15e293898ef8e237321dc
+>>>>>>> 92619dcf9315a101f198716ca93e6f22a1d4bf50
+| | | Location: 0000.0014.0000.007.000.000.000.000.000
+| | | Matching Device ID: USB\Class_03&SubClass_01
+| | | Service: HidUsb
+| | | Driver: hidusb.sys, 3/18/2017 21:56:35, 40960 bytes
+| | | Driver: hidclass.sys, 3/18/2017 21:56:35, 180736 bytes
+| | | Driver: hidparse.sys, 3/18/2017 21:56:35, 40960 bytes
+| | | 
+| | +-+ HID-compliant mouse
+| | | | Vendor/Product ID: 0x03F0, 0x1198
+| | | | Matching Device ID: HID_DEVICE_SYSTEM_MOUSE
+| | | | Service: mouhid
+| | | | Driver: mouhid.sys, 3/18/2017 21:56:35, 33280 bytes
+| | | | Driver: mouclass.sys, 3/18/2017 21:56:35, 60320 bytes
 
 ----------------
 Gameport Devices
@@ -301,6 +310,8 @@ Gameport Devices
 PS/2 Devices
 ------------
 
+<<<<<<< HEAD
+=======
 ------------------------
 Disk & DVD/CD-ROM Drives
 ------------------------
@@ -463,6 +474,7 @@ Device ID: PCI\VEN_10DE&DEV_0FBC&SUBSYS_1097103C&REV_A1\4&8DE44FB&0&0108
 Device ID: PCI\VEN_8086&DEV_A13D&SUBSYS_802F103C&REV_31\3&11583659&4&B3
    Driver: n/a
 
+>>>>>>> 92619dcf9315a101f198716ca93e6f22a1d4bf50
 ------------------
 DirectShow Filters
 ------------------
@@ -1013,7 +1025,11 @@ Cab Id: 0
 Problem signature:
 P1: 10.0.15063.502
 P2: 80073d01
+<<<<<<< HEAD
+P3: A824358E-C396-40E4-8D7A-EFEF9F99904E
+=======
 P3: 62731700-85DB-4295-A9CB-99E7B0E4CD1F
+>>>>>>> 92619dcf9315a101f198716ca93e6f22a1d4bf50
 P4: Install
 P5: 1
 P6: 0
@@ -1032,7 +1048,11 @@ Cab Id: 0
 Problem signature:
 P1: 10.0.15063.502
 P2: 80073d01
+<<<<<<< HEAD
+P3: 05EB73E9-3EFB-4798-BB81-38F3CDC056B1
+=======
 P3: 4415F40D-9A22-46F8-9B88-A9D7031F8B62
+>>>>>>> 92619dcf9315a101f198716ca93e6f22a1d4bf50
 P4: Install
 P5: 1
 P6: 0
@@ -1051,7 +1071,11 @@ Cab Id: 0
 Problem signature:
 P1: 10.0.15063.502
 P2: 80073d01
+<<<<<<< HEAD
+P3: 62731700-85DB-4295-A9CB-99E7B0E4CD1F
+=======
 P3: 4415F40D-9A22-46F8-9B88-A9D7031F8B62
+>>>>>>> 92619dcf9315a101f198716ca93e6f22a1d4bf50
 P4: Install
 P5: 1
 P6: 0
@@ -1070,6 +1094,13 @@ Cab Id: 0
 Problem signature:
 P1: 10.0.15063.502
 <<<<<<< HEAD
+P2: 80073d01
+P3: 4415F40D-9A22-46F8-9B88-A9D7031F8B62
+P4: Install
+P5: 1
+P6: 0
+=======
+<<<<<<< HEAD
 P2: 800704cf
 =======
 P2: 8024401c
@@ -1078,9 +1109,10 @@ P3: 00000000-0000-0000-0000-000000000000
 P4: Scan
 P5: 0
 P6: 1
+>>>>>>> 92619dcf9315a101f198716ca93e6f22a1d4bf50
 P7: 0
-P8: CcmExec
-P9: {3DA21691-E39D-4DA6-8A4B-B43877BCB1B7}
+P8: Update;taskhostw
+P9: {855E8A7C-ECB4-4CA3-B045-1DFA50104289}
 P10: 0
 
 
@@ -1092,14 +1124,14 @@ Cab Id: 0
 
 Problem signature:
 P1: 10.0.15063.502
-P2: 8024401c
-P3: 00000000-0000-0000-0000-000000000000
-P4: Scan
-P5: 0
-P6: 1
+P2: 80073d01
+P3: 4415F40D-9A22-46F8-9B88-A9D7031F8B62
+P4: Install
+P5: 1
+P6: 0
 P7: 0
-P8: CcmExec
-P9: {3DA21691-E39D-4DA6-8A4B-B43877BCB1B7}
+P8: Update;taskhostw
+P9: {855E8A7C-ECB4-4CA3-B045-1DFA50104289}
 P10: 0
 
 
@@ -1112,6 +1144,9 @@ Cab Id: 0
 Problem signature:
 P1: 10.0.15063.502
 <<<<<<< HEAD
+P2: 800704cf
+=======
+<<<<<<< HEAD
 P2: 80073d01
 P3: 9E197E44-4D83-480B-A4C4-40ECC7FC6ECA
 P4: Install
@@ -1119,6 +1154,7 @@ P5: 1
 P6: 0
 =======
 P2: 8024401c
+>>>>>>> 92619dcf9315a101f198716ca93e6f22a1d4bf50
 P3: 00000000-0000-0000-0000-000000000000
 P4: Scan
 P5: 0
@@ -1157,14 +1193,14 @@ Cab Id: 0
 
 Problem signature:
 P1: 10.0.15063.502
-P2: 8024401c
-P3: 00000000-0000-0000-0000-000000000000
-P4: Scan
-P5: 0
-P6: 1
+P2: 80073d01
+P3: 9E197E44-4D83-480B-A4C4-40ECC7FC6ECA
+P4: Install
+P5: 1
+P6: 0
 P7: 0
-P8: CcmExec
-P9: {3DA21691-E39D-4DA6-8A4B-B43877BCB1B7}
+P8: Update;taskhostw
+P9: {855E8A7C-ECB4-4CA3-B045-1DFA50104289}
 P10: 0
 
 
@@ -1176,14 +1212,14 @@ Cab Id: 0
 
 Problem signature:
 P1: 10.0.15063.502
-P2: 8024401c
-P3: 00000000-0000-0000-0000-000000000000
-P4: Scan
-P5: 0
-P6: 1
+P2: 80073d01
+P3: A868B4BB-4089-4BD1-BA63-0D73BE63EB90
+P4: Install
+P5: 1
+P6: 0
 P7: 0
-P8: CcmExec
-P9: {3DA21691-E39D-4DA6-8A4B-B43877BCB1B7}
+P8: Update;taskhostw
+P9: {855E8A7C-ECB4-4CA3-B045-1DFA50104289}
 P10: 0
 
 

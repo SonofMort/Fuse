@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Log file open, 07/06/18 14:05:49
 LogInit:Display: Running engine for game: RPG_Game
 LogPlatformFile: Not using cached read wrapper
@@ -348,3 +349,42 @@ LogInit: Object subsystem initialized
 [2018.07.06-13.06.10:201][671]LogModuleManager: Shutting down and abandoning module PakFile (2)
 [2018.07.06-13.06.10:203][671]LogExit: Exiting.
 [2018.07.06-13.06.10:204][671]Log file closed, 07/06/18 14:06:10
+=======
+﻿Log file open, 07/03/18 12:09:14
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: RPG_Game
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(1111842085) SRandInit(1111842085).
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.212250
+LogD3D11RHI: Aftermath initialized
+LogPluginManager: Display: Downloading 'Substance' plugin from marketplace (com.epicgames.launcher://ue/marketplace/content/2f6439c2f9584f49809d9b13b16c2ba4).
+LogExit: Preparing to exit.
+LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+LogModuleManager: Shutting down and abandoning module Landscape (26)
+LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+LogModuleManager: Shutting down and abandoning module Renderer (16)
+LogModuleManager: Shutting down and abandoning module Engine (14)
+LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+LogModuleManager: Shutting down and abandoning module PakFile (2)
+LogExit: Exiting.
+Log file closed, 07/03/18 12:09:14
+>>>>>>> c8321dddb04ae0a29658783a857c7e78dc31b379
